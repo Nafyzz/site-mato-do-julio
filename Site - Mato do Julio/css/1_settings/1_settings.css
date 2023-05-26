@@ -7,3 +7,20 @@
     --color-secundary: #2A6B36;
     --font-primary:'Roboto', sans-serif;
 }
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header"
+                         "article picture"
+                         "footer picture";
+    width: 80%;
+    margin: 25px auto;
+}
+
+#header{
+    grid-area: header;
+    font-family: var(--font-primary);
+    height: 40px;
+    display: flex;
+}

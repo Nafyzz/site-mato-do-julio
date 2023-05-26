@@ -1,0 +1,27 @@
+#navigation > ul > li {
+    display: inline-block;
+}
+
+#navigation > ul > li > a {
+    text-decoration: none;
+    color: var(--color-secundary);
+    line-height: 40px;
+    margin-right: 10px;
+    font-weight: bold;
+    padding: 0 5px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+#navigation > ul > li > a:hover {
+    color: var(--color-primary);
+    padding: 10px 5px;
+    transition-duration: 0.3s;
+}
+
+#brand > img{
+    display: inline;
+    height: 40px;
+    margin-right: 20px;
+    align-items: center;
+}
