@@ -14,7 +14,7 @@
     color: var(--color-secundary);
     line-height: 40px;
     margin-right: 10px;
-    font-weight: bold;
+    font-weight: 600;
     padding: 0 5px;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
@@ -24,6 +24,13 @@
     padding: 10px 5px;
     border-bottom: solid 3px;
     transition-duration: 0.3s;
+}
+
+.navigation > ul > li > a > span{
+    width: 200px;
+}
+.sub-arrow{
+    width: 200px;
 }
 
 #brand {
@@ -38,6 +45,7 @@
 #brand > h1{
     color: var(--color-primary);
     font-size: large;
+    font-weight: 800;
 }
 
 #brand > img{
