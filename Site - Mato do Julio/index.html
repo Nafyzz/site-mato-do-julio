@@ -1,19 +1,19 @@
 <!doctype html>
 <html lang="pt-br">
-<head>
+  <head>
     <title>Mato do Júlio</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
+  </head>
 
-<body>
+  <body>
     <section class="container">
+      <!--MENU-->
       <header class="header">
 
         <div href="#" id="brand">
@@ -25,21 +25,207 @@
           <ul>
             <li><a href="#">Quem somos</a></li>
             <li><a href="#">O que fazemos</a></li>
-            <li><a href="#">Produtos<span class="sub-arrow"><img src="img/sub-arrow.png" alt="down arrow"></span></a></li>
-            <li><a href="#">Sobre o Mato<span class="sub-arrow"><img src="img/sub-arrow.png" alt="down arrow"></span></a></li>
+
+            <li class="with-submenu"><a href="#">Produtos<span class="sub-arrow"><img src="img/sub-arrow.png" alt="down arrow"></span>
+              <ul class="submenu">
+                <li>Camiseta</li>
+                <li>Caneca</li>
+              </ul></a></li>
+            
+            <li class="with-submenu"><a href="#">Sobre o Mato<span class="sub-arrow"><img src="img/sub-arrow.png" alt="down arrow"></span>
+              <ul class="submenu">
+                <li>Sobre o Mato</li>
+                <li>Flora</li>
+                <li>Fauna</li>
+              </ul></a></li>
             <li><a href="#">Contato</a></li>
           </ul> 
         </nav>
 
         <button class="button" id="donate">DOE AGORA</button>
       </header>
-    </section>
 
+      <!--CONTATO-->
+
+      <section class="contact">
+        <div class="first-column">
+          <h2>Quem somos</h2>
+          <ul class="sub-contact">
+            <li><a href="#"><img src="img/" alt=""> Sobre o Mato</a></li>
+            <li><a href="#"><img src="img/" alt="">Trabalhe conosco</a></li>
+          </ul>
+
+          <h2>Nossos Parceiros</h2>
+          <ul class="sub-contact">
+            <li><a href="#"><img src="img/" alt="">Adicionar</a></li>
+            <li><a href="#"><img src="img/" alt="">Adicionar</a></li>
+            <li><a href="#"><img src="img/" alt="">Adicionar</a></li>
+            <li><a href="#"><img src="img/" alt="">Adicionar</a></li>
+          </ul>
+
+          
+        </div>
+
+        <div class="second-column">
+          <h2>Nossas ações</h2>
+          <ul class="sub-contact">
+            <li><a href="#"><img src="img/" alt="">Presença na mídia</a></li>
+            <li><a href="#"><img src="img/" alt="">Catalogação da fauna e flora</a></li>
+            <li><a href="#"><img src="img/" alt="">Cuidados com o Mato</a></li>
+          </ul>
+          <h2>Ajude a causa</h2>
+          <ul class="sub-contact">
+            <li><a href="#"><img src="img/" alt="">Doe agora</a></li>
+            <li><a href="#"><img src="img/" alt="">Seja Ativista</a></li>
+          </ul>
+        </div>
+
+        <div class="third-column">
+        <h2>Contato</h2>
+          <ul class="sub-contact">
+            <li><a href="#"><img src="img/" alt="">Whatsapp</a></li>
+            <li><a href="#"><img src="img/" alt="">Instagram</a></li>
+            <li><a href="#"><img src="img/" alt="">Facebook</a></li>
+            <li><a href="#"><img src="img/" alt="">Tiktok</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!--FOOTER-->
+      <div class="footer"> <!--colocar icons depois-->
+        <p> Coletivo Mato do Júlio © 2023</p>
+        <div class="widgets-footer">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Tiktok</a>
+        </div>
+      </div>
+    
+
+      <!--FLORA TABBER-->
+      <section class="tabber">
+        <div class="tab-flora">
+          <h5 class="tab-title">Flora</h5>
+          <button class="tablink" onclick="tabbers(event, 'Abacate')">Abacate</button>
+          <button class="tablink" onclick="tabbers(event, 'Alecrim-do-campo')">Alecrim-do-campo</button>
+          <button class="tablink" onclick="tabbers(event, 'Amoreira')">Amoreira</button>
+        </div>
+        
+        <div clas="flora">
+          <div class="tab-intro">A catalogação realizada até agora na floresta Mato do Júlio representa apenas uma parte do que ainda pode ser feito e do tamanho da diversidade a ser preservada. Abaixo, conheça algumas das espécies encontradas na floresta:</div>
+        
+          <div id="Abacate" class="description">
+            <h2>Abacate</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
+              </p>
+          </div>
+        
+          <div id="Alecrim-do-campo" class="description">
+            <h2>Alecrim-do-campo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
+              </p>
+          </div>
+        
+          <div id="Amoreira" class="description">
+            <h2>Amoreira</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
+              </p>
+          </div>
+        
+        </div>
+      </section> 
+
+      <!--FAUNA TABBER-->
+      <section class="tabber">
+        <div class="tab-primary">
+          <h5 class="tab-title">Fauna</h5>
+          <button class="tablink" onclick="tabbers(event, 'Mamíferos')">Mamíferos</button>
+          <button class="tablink" onclick="tabbers(event, 'Répteis')">Répteis</button>
+          <button class="tablink" onclick="tabbers(event, 'Aves')">Aves</button>
+        </div>
+
+        <div class="fauna">
+
+          <div class="tab-intro">O Mato do Júlio apresenta uma grande diversidade de espécies animais, de répteis a
+            mamíferos. Confira abaixo as espécies encontradas:
+          </div>
+
+          <!--Second Button - Mamíferos-->
+          <div id="Mamíferos" class="tab-secundary">
+
+            <button class="sub-tablink" onclick="tabbers(event, 'Graxaim-do-mato')">Graxaim-do-mato</button>
+            <button class="sub-tablink" onclick="tabbers(event, 'Gambá-de-orelha-branca')">Gambá-de-orelha-branca</button>
+
+            <div id="Graxaim-do-mato" class="description">
+              <h2>Graxaim-do-mato</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
+              </p>
+            </div>
+
+            <div id="Gambá-de-orelha-branca" class="description">
+              <h2>Gambá-de-orelha-branca</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
+              </p>
+            </div>
+
+          </div>
+
+          <!--Second Button - Répteis-->
+          <div id="Répteis" class="tab-secundary">
+
+            <button class="tablink" onclick="tabbers(event, 'Ouriço-cacheiro')">Ouriço-cacheiro</button>
+            <button class="tablink" onclick="tabbers(event, 'Preá')">Preá</button>
+
+            <div id="Ouriço-cacheiro" class="description">
+              <h2>Ouriço-cacheiro</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
+              </p>
+            </div>
+
+            <div id="Preá" class="description">
+              <h2>Preá</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
+              </p>
+            </div>
+
+          </div>
+
+          <!--Second Button - Aves-->
+          <div id="Aves" class="tab-secundary">
+
+            <button class="tablink" onclick="tabbers(event, 'Ratão-do-banhado')">Ratão-do-banhado</button>
+            <button class="tablink" onclick="tabbers(event, 'Tatu-galinha')">Tatu-galinha</button>
+
+            <div id="Ratão-do-banhado" class="description">
+              <h2>Ratão-do-banhado</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
+              </p>
+            </div>
+
+            <div id="Tatu-galinha" class="description">
+              <h2>Tatu-galinha</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
+              </p>
+          </div>
+
+        </div>
+      </section> <!--tabber-->
+    </section> <!--container-->
 
     <!-- Optional JavaScript -->
+    <script type="text/javascript" src="js/script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>

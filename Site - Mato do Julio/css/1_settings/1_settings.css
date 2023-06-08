@@ -13,16 +13,33 @@
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "header header"
                          "article picture"
-                         "footer picture";
+                         "article picture"
+                         "contact contact"
+                         "footer footer";
     width: 80%;
     margin: 25px auto;
+    font-family: var(--font-primary);
 }
 
 .header{
+    background-color: antiquewhite;
     grid-area: header;
     font-family: var(--font-primary);
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.contact{
+    background-color: antiquewhite;
+    grid-area: contact;
+}
+
+.footer{
+    background-color: antiquewhite;
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
