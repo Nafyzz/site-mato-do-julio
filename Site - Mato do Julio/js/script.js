@@ -1,4 +1,4 @@
-//Function vertical tab
+//Function Tab
 
 function tabbers(evt, Name) {
     var i, x, tablinks;
