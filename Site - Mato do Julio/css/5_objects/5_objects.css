@@ -59,29 +59,7 @@
     height: 50%;
 }
 
-/* TABBER */
-.tabber{
-    background-color: antiquewhite;
-    width: 80%;
-    margin: 25px auto;
-}
-
-.fauna .flora{
-    margin-left:130px;
-}
-
-.tab-primary{
-    width: 130px;
-}
-
-.tab-secundary{
-    display: none;
-}
-
-.description{
-    display: none;
-}
-
+/* CONTACT */
 .contact{
     display: flex;
     justify-content: space-around;
@@ -89,3 +67,11 @@
 .first-column .second-column{
     margin-right: 50px;
 }
+
+.sub-contact > li > a{
+    color: var(--text-color);
+    display: flex;
+    text-decoration: none;
+}
+
+/* FOOTER */

@@ -36,3 +36,26 @@
 .submenu > li:active {
     background: var(--text-color-light);
 }
+
+/* TABBER */
+.tabber{
+    background-color: antiquewhite;
+    width: 80%;
+    margin: 25px auto;
+}
+
+.fauna .flora{
+    margin-left:130px;
+}
+
+.tab-primary{
+    width: 130px;
+}
+
+.tab-secundary{
+    display: none;
+}
+
+.description{
+    display: none;
+}
