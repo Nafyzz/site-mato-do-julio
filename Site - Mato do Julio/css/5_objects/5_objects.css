@@ -12,75 +12,191 @@
 }
 
 .navigation > ul > li > a {
-    text-decoration: none;
     color: var(--color-secundary);
+    text-decoration: none;
+    text-align: center;
     line-height: 40px;
     margin-right: 10px;
     font-weight: 600;
     padding: 0 5px;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
 }
 
 .navigation > ul > li > a:hover {
     padding: 10px 5px;
     border-bottom: solid 3px;
-    transition-duration: 0.3s;
+    transition-duration: 0.5s;
 }
 
 #brand {
     display: flex;
-    margin-right: 13%;
-    display: flex;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+    margin-right: 10%;
 }
 
 #brand > h1 {
     color: var(--color-primary);
-    font-size: large;
+    font-size: larger;
     font-weight: 800;
 }
 
 #brand > img {
     display: inline;
-    height: 60px;
-    margin-right: 20px;
     align-items: center;
+    height: 80px;
+    margin-right: 20px;
 }
 
 .button {
     background-color: var(--color-secundary);
     color: var(--text-color-light);
-    margin-left: 30px;
-    border: none;
-    border-radius: 30px;
     width: 10%;
     height: 50%;
+    border: none;
+    border-radius: 30px;
+    font-weight: 500;
+    margin-left: 30px;
+}
+.button:hover {
+    background-color: var(--text-color-light);
+    color: var(--color-secundary);
+    border: solid 2px;
+    font-weight: 600;
+    transition-duration: 0.5s;
 }
 
 /* CONTACT */
 .contact {
+    background-color: var(--color-primary);
     display: flex;
+    align-items: baseline;
     justify-content: space-around;
 }
 
+.contact-column{
+    background-color: var(--color-secundary);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    padding: 40px;
+    z-index: 1;
+}
+
+.contact-column > a > img{    
+    width: 150px;
+    height: 150px;
+}
+
+.contact-column > h1{
+    color: var(--text-color-light);
+    font-size: large;
+    text-transform: uppercase;
+}
+
+.contact-text{
+    color: var(--text-color-light);
+    margin: 26px 0 32px;
+}
+
+.button-contact {
+    background-color: var(--color-primary);
+    color: var(--text-color-light);
+    width: 40%;
+    border: none;
+    border-radius: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.button-contact:hover {
+    background-color: var(--text-color-light);
+    color: var(--color-primary);
+    border: solid 2px;
+    font-weight: 600;
+    transition-duration: 0.5s;
+}
+
 .contact > h1 {
-    font-family: "Palanquin Dark", Sans-serif;
+    font-family: var(--font-primary);
     font-size: 18px;
     font-weight: 900;
     text-transform: uppercase;
 }
 
-.first-column .second-column {
-    margin-right: 50px;
+.contact > div > h2{
+    color: var(--text-color-light);
 }
 
 .sub-contact > li > a {
-    color: var(--text-color);
-    display: flex;
+    color: var(--text-color-light);
     text-decoration: none;
 }
 
+.sub-contact > li > a:hover{
+    color: var(--text-color-light);
+    text-decoration: underline;
+}
+
 /* FOOTER */
+
+.footer {
+    background-color: var(--);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+    margin-top: 5px;
+}
+
+
+.first-column , .second-column {
+    margin-right: 50px;
+}
+
+.contact-footer > ul > li {
+    display: inline-block;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact-footer > ul > li > a{
+    background-color: var(--color-secundary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.contact-footer ul > li > a > img{
+    width: 25px;
+    height: 25px;
+}
+
+.contact-footer ul > li > a.whatsapp:hover {
+    background-color: var(--text-color-light);
+    border: 2px solid var(--color-secundary);
+}
+
+.contact-footer > ul > li > a.instagram:hover {
+    background-color: var(--text-color-light);
+    border: 2px solid var(--color-secundary);
+}
+
+.contact-footer > ul > li > a.facebook:hover {
+    background-color: var(--text-color-light);
+    border: 2px solid var(--color-secundary);
+}
+
+.contact-footer > ul > li > a.tiktok:hover {
+    background-color: var(--text-color-light);
+    border: 2px solid var(--color-secundary);
+}

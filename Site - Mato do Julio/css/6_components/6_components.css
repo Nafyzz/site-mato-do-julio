@@ -4,9 +4,6 @@
     position: absolute;
     z-index: 10;
     list-style: none;
-    left: 0;
-    margin: 0;
-    padding: 0;
     box-shadow: 5px 5px 5px #CCC;
 }
 
@@ -20,9 +17,10 @@
 }
 
 .submenu > li {
-    background: antiquewhite;
-    border-bottom: 1px solid var(--color-secundary);
+    background: var(--text-color-light);
     color: var(--color-secundary);
+    border-bottom: 1px solid var(--color-secundary);
+  
     padding: 1.2em 1em;
     transition: 0.3s all linear;
     display: block;
@@ -30,7 +28,8 @@
 }
 
 .submenu > li:hover {
-    background: var(--text-color-light)
+    background: var(--color-secundary);
+    color: var(--text-color-light);
 }
 
 .submenu > li:active {
@@ -38,6 +37,10 @@
 }
 
 /* TABBER */
+
+.tabber{
+    display: table-column;
+}
 
 .tabber-flora {
     background-color: antiquewhite;
@@ -54,43 +57,37 @@
     margin: 25px auto;
 }
 
-
 .tablink {
+    color: var(--text-dark);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 28%;
-    min-width: 28%;
-    border: none;
-
-    color: var(--text-dark);
+    width: 30%;
     font-size: 15px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     padding: 12px 20px;
-    margin: 0;
-    border-radius: 0;
     border: none;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    transition: all 0.3s ease;
 }
 
-.tablink > button:hover{
+/*.tablink > button:hover{
     color: #222;
     background-color: #fff;
-    
     border: none;
-}
+}*/
 
 .sub-tablink {
+    color: var(--text-dark);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 28%;
-    min-width: 28%;
+    width: 30%;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 12px 20px;
     border: none;
 }
 
@@ -98,8 +95,10 @@
     display: column;
 }
 
+/* Fichario */
 .tab-primary-two{
     display: flex;
+
 }
 
 .tab-secundary {
@@ -152,24 +151,27 @@
 /* BACK TO TOP */
 
 .back-top {
-    background-color: var(--color-primary);
+    background-color: var(--color-secundary);
     color: var(--text-color-light);
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     position: sticky;
     bottom: 50px;
     z-index: 99;
     font-size: 15px;
     border: none;
     padding: 15px;
-    border-radius: 100px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     margin-left: 95%; 
     margin-top: calc(100vh + 50px);
     cursor: pointer;
   }
 
   .back-top:hover {
-    background-color: var(--color-secundary);
+    background-color: var(--color-primary);
+    border: none;
     transition: all 0.3s ease;
   }

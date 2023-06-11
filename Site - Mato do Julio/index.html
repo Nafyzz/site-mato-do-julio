@@ -26,13 +26,13 @@
             <li><a href="#">Quem somos</a></li>
             <li><a href="#">O que fazemos</a></li>
 
-            <li class="with-submenu"><a href="#">Produtos<span class="sub-arrow"><img src="img/sub-arrow-16px.png" alt="down arrow"></span>
+            <li class="with-submenu"><a href="#">Produtos <span class="sub-arrow"><img src="img/sub-arrow-16px.png" alt="down arrow"></span>
               <ul class="submenu">
                 <li>Camiseta</li>
                 <li>Caneca</li>
               </ul></a></li>
             
-            <li class="with-submenu"><a href="#">Sobre o Mato<span class="sub-arrow"><img src="img/sub-arrow-16px.png" alt="down arrow"></span>
+            <li class="with-submenu"><a href="#">Sobre o Mato <span class="sub-arrow"><img src="img/sub-arrow-16px.png" alt="down arrow"></span>
               <ul class="submenu">
                 <li>Sobre o Mato</li>
                 <li>Flora</li>
@@ -46,54 +46,59 @@
       </header>
 
       <!--CONTATO-->
-      <section class="contact">
-        <div class="first-column">
-          <h2>Quem somos</h2>
-          <ul class="sub-contact">
-            <li><a href="#"><img src="img/" alt=""> Sobre o Mato</a></li>
-            <li><a href="#"><img src="img/" alt="">Trabalhe conosco</a></li>
-          </ul>
+        <section class="contact">
+          <div class="contact-column">
+            <a class="contact-logo">
+              <img src="img/mato logo2.png" alt="Logo Mato">
+            </a>
+            <p class="contact-text">
+              Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
+            </p>
+            <h1>Ajude a causa</h1>
+            <button class="button-contact">doe</button>
+          </div>
 
-          <h2>Nossos Parceiros</h2>
-          <ul class="sub-contact">
-            <li><a href="#"><img src="img/right-arrow-bold.png" alt="">Adicionar</a></li>
-            <li><a href="#"><img src="img/right-arrow-bold.png" alt="">Adicionar</a></li>
-            <li><a href="#"><img src="img/right-arrow-bold.png" alt="">Adicionar</a></li>
-            <li><a href="#"><img src="img/right-arrow-bold.png" alt="">Adicionar</a></li>
-          </ul>
+          <div class="first-column">
+            <h2>Quem somos</h2>
+            <ul class="sub-contact">
+              <li><a href="#"><img src="img/right-arrow-bold.png" alt=""> Sobre o Mato</a></li>
+              <li><a href="#"><img src="img/right-arrow-bold.png" alt=""> Trabalhe conosco</a></li>
+            </ul>
 
-          
-        </div>
+            <h2>Nossas ações</h2>
+            <ul class="sub-contact">
+              <li><a href="#"><img src="img/right-arrow-bold.png" alt=""> Presença na mídia</a></li>
+              <li><a href="#"><img src="img/right-arrow-bold.png" alt=""> Catalogação da fauna e flora</a></li>
+              <li><a href="#"><img src="img/right-arrow-bold.png" alt=""> Cuidados com o Mato</a></li>
+            </ul>
+          </div>
 
-        <div class="second-column">
-          <h2>Nossas ações</h2>
-          <ul class="sub-contact">
-            <li><a href="#"><img src="img/" alt="">Presença na mídia</a></li>
-            <li><a href="#"><img src="img/" alt="">Catalogação da fauna e flora</a></li>
-            <li><a href="#"><img src="img/" alt="">Cuidados com o Mato</a></li>
-          </ul>
-          <h2>Ajude a causa</h2>
-          <ul class="sub-contact">
-            <li><a href="#"><img src="img/" alt="">Doe agora</a></li>
-            <li><a href="#"><img src="img/" alt="">Seja Ativista</a></li>
-          </ul>
-        </div>
-
-        <div class="third-column">
-        <h2>Contato</h2>
-          <ul class="sub-contact">
-            <li><a href="#"><img src="img/whatsapp.png" alt=""></a></li>
-            <li><a href="#"><img src="img/instagram.png" alt=""></a></li>
-            <li><a href="#"><img src="img/facebook.png" alt=""></a></li>
-            <li><a href="#"><img src="img/tiktok.png" alt=""></a></li>
-          </ul>
-        </div>
-      </section>
+          <div class="second-column">
+            <h2>Nossos Parceiros</h2>
+            <ul class="sub-contact">
+              <li><a href="#"><img src="img/right-arrow-bold.png" alt=""> Adicionar</a></li>
+              <li><a href="#"><img src="img/right-arrow-bold.png" alt=""> Adicionar</a></li>
+              <li><a href="#"><img src="img/right-arrow-bold.png" alt=""> Adicionar</a></li>
+              <li><a href="#"><img src="img/right-arrow-bold.png" alt=""> Adicionar</a></li>
+            </ul>
+          </div>
+        
+        </section>
 
       <!--FOOTER-->
       <div class="footer">
-        <p>Coletivo Mato do Júlio © 2023</p>
+        <p> © 2023, Coletivo Mato do Júlio. </p>
+      
+        <div class="contact-footer">
+          <ul class="social-icons">
+            <li><a class="whatsapp" href="#"><img src="img/whatsapp.png" alt=""></a></li>
+            <li><a class="instagram" href="#"><img src="img/instagram.png" alt=""></a></li>
+            <li><a class="facebook" href="#"><img src="img/facebook.png" alt=""></a></li>
+            <li><a class="tiktok" href="#"><img src="img/tiktok.png" alt=""></a></li>
+          </ul>
+        </div>
       </div>
+      
 
       <!--FLORA TABBER-->
       <section class="tabber">
@@ -104,7 +109,7 @@
             <div class="tab-intro">A catalogação realizada até agora na floresta Mato do Júlio representa apenas uma parte do que ainda pode ser feito e do tamanho da diversidade a ser preservada. Abaixo, conheça algumas das espécies encontradas na floresta:</div>
 
             <div class="tab-primary-one">
-
+              <!--<input class="tablink" type="button" onclick="tabbers(event, 'Abacate')" value= "Abacate" checked> -->
               <button class="tablink" onclick="tabbers(event, 'Abacate')">Abacate</button>
               <button class="tablink" onclick="tabbers(event, 'Alecrim-do-campo')">Alecrim-do-campo</button>
               <button class="tablink" onclick="tabbers(event, 'Amoreira')">Amoreira</button>

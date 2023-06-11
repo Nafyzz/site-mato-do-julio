@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root{
-    --text-color-light: #ffff;
-    --text-color-dark: #0000;
+    --text-color-light: #ffffff;
+    --text-color-dark: #000000;
     --color-primary: #A90B13;
     --color-secundary: #2A6B36;
     --color-bg-details: #DEDEDE;
@@ -26,11 +26,12 @@
 .header{
     background-color: antiquewhite;
     grid-area: header;
-    font-family: var(--font-primary);
-    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: var(--font-primary);
+    height: 80px;
+    
 }
 
 .contact{
@@ -44,5 +45,5 @@
     grid-area: footer;
     display: table-row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
