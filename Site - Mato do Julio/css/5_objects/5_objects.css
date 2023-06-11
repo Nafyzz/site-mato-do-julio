@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+    
 }
 
 .navigation > ul > li {
@@ -36,13 +37,13 @@
     text-transform: uppercase;
 }
 
-#brand > h1{
+#brand > h1 {
     color: var(--color-primary);
     font-size: large;
     font-weight: 800;
 }
 
-#brand > img{
+#brand > img {
     display: inline;
     height: 60px;
     margin-right: 20px;
@@ -60,15 +61,23 @@
 }
 
 /* CONTACT */
-.contact{
+.contact {
     display: flex;
     justify-content: space-around;
 }
-.first-column .second-column{
+
+.contact > h1 {
+    font-family: "Palanquin Dark", Sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.first-column .second-column {
     margin-right: 50px;
 }
 
-.sub-contact > li > a{
+.sub-contact > li > a {
     color: var(--text-color);
     display: flex;
     text-decoration: none;

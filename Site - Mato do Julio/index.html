@@ -97,122 +97,131 @@
 
       <!--FLORA TABBER-->
       <section class="tabber">
-        <div class="tab-flora">
-          <h5 class="tab-title">Flora</h5>
-          <button class="tablink" onclick="tabbers(event, 'Abacate')">Abacate</button>
-          <button class="tablink" onclick="tabbers(event, 'Alecrim-do-campo')">Alecrim-do-campo</button>
-          <button class="tablink" onclick="tabbers(event, 'Amoreira')">Amoreira</button>
-        </div>
-        
-        <div clas="flora">
-          <div class="tab-intro">A catalogação realizada até agora na floresta Mato do Júlio representa apenas uma parte do que ainda pode ser feito e do tamanho da diversidade a ser preservada. Abaixo, conheça algumas das espécies encontradas na floresta:</div>
-        
-          <div id="Abacate" class="description">
-            <h2>Abacate</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
-              </p>
-          </div>
-        
-          <div id="Alecrim-do-campo" class="description">
-            <h2>Alecrim-do-campo</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
-              </p>
-          </div>
-        
-          <div id="Amoreira" class="description">
-            <h2>Amoreira</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
-              </p>
-          </div>
-        
-        </div>
-      </section> 
+        <section class="tabber-flora">
 
-      <!--FAUNA TABBER-->
-      <section class="tabber">
-        <div class="tab-primary">
-          <h5 class="tab-title">Fauna</h5>
-          <button class="tablink" onclick="tabbers(event, 'Mamíferos')">Mamíferos</button>
-          <button class="tablink" onclick="tabbers(event, 'Répteis')">Répteis</button>
-          <button class="tablink" onclick="tabbers(event, 'Aves')">Aves</button>
-        </div>
+          <div clas="flora">
+            <h5 class="tab-title">Flora</h5>
+            <div class="tab-intro">A catalogação realizada até agora na floresta Mato do Júlio representa apenas uma parte do que ainda pode ser feito e do tamanho da diversidade a ser preservada. Abaixo, conheça algumas das espécies encontradas na floresta:</div>
 
-        <div class="fauna">
+            <div class="tab-primary-one">
 
-          <div class="tab-intro">O Mato do Júlio apresenta uma grande diversidade de espécies animais, de répteis a
-            mamíferos. Confira abaixo as espécies encontradas:
-          </div>
-
-          <!--SECOND TAB - Mamíferos-->
-          <div id="Mamíferos" class="tab-secundary">
-
-            <button class="sub-tablink" onclick="tabbers(event, 'Graxaim-do-mato')">Graxaim-do-mato</button>
-            <button class="sub-tablink" onclick="tabbers(event, 'Gambá-de-orelha-branca')">Gambá-de-orelha-branca</button>
-
-            <div id="Graxaim-do-mato" class="description">
-              <h2>Graxaim-do-mato</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
-              </p>
+              <button class="tablink" onclick="tabbers(event, 'Abacate')">Abacate</button>
+              <button class="tablink" onclick="tabbers(event, 'Alecrim-do-campo')">Alecrim-do-campo</button>
+              <button class="tablink" onclick="tabbers(event, 'Amoreira')">Amoreira</button>
+              
             </div>
 
-            <div id="Gambá-de-orelha-branca" class="description">
-              <h2>Gambá-de-orelha-branca</h2>
+            <div id="Abacate" class="description">
+              <h2>Abacate</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
-              </p>
+                <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
+                </p>
+            </div>
+          
+            <div id="Alecrim-do-campo" class="description">
+              <h2>Alecrim-do-campo</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
+                </p>
+            </div>
+          
+            <div id="Amoreira" class="description">
+              <h2>Amoreira</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
+                </p>
+            </div>
+          
+          </div>
+        </section> 
+
+        <!--FAUNA TABBER-->
+        <section class="tabber-fauna">
+          <div class="tab-primary-two">
+
+            <button class="tablink" onclick="tabbers(event, 'Mamíferos')">Mamíferos</button>
+            <button class="tablink" onclick="tabbers(event, 'Répteis')">Répteis</button>
+            <button class="tablink" onclick="tabbers(event, 'Aves')">Aves</button>
+
+          </div>
+
+          <div class="fauna">
+            <h5 class="tab-title">Fauna</h5>
+            <div class="tab-intro">O Mato do Júlio apresenta uma grande diversidade de espécies animais, de répteis a
+              mamíferos. Confira abaixo as espécies encontradas:
+            </div>
+
+            <!--SECOND TAB - Mamíferos-->
+            <div id="Mamíferos" class="tab-secundary">
+
+              <button class="sub-tablink" onclick="tabbers(event, 'Graxaim-do-mato')" aria-pressed="true">Graxaim-do-mato</button>
+              <button class="sub-tablink" onclick="tabbers(event, 'Gambá-de-orelha-branca')">Gambá-de-orelha-branca</button>
+
+              <div id="Graxaim-do-mato" class="sub-description">
+                <h2>Graxaim-do-mato</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
+                </p>
+              </div>
+
+              <div id="Gambá-de-orelha-branca" class="sub-description">
+                <h2>Gambá-de-orelha-branca</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
+                </p>
+              </div>
+
+            </div>
+
+            <!--SECOND TAB - Répteis-->
+            <div id="Répteis" class="tab-secundary">
+
+              <button class="sub-tablink" onclick="tabbers(event, 'Ouriço-cacheiro')">Ouriço-cacheiro</button>
+              <button class="sub-tablink" onclick="tabbers(event, 'Preá')">Preá</button>
+
+              <div id="Ouriço-cacheiro" class="sub-description">
+                <h2>Ouriço-cacheiro</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
+                </p>
+              </div>
+
+              <div id="Preá" class="sub-description">
+                <h2>Preá</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
+                </p>
+              </div>
+
+            </div>
+
+            <!--SECOND TAB - Aves-->
+            <div id="Aves" class="tab-secundary">
+
+              <button class="sub-tablink" onclick="tabbers(event, 'Ratão-do-banhado')">Ratão-do-banhado</button>
+              <button class="sub-tablink" onclick="tabbers(event, 'Tatu-galinha')">Tatu-galinha</button>
+
+              <div id="Ratão-do-banhado" class="sub-description">
+                <h2>Ratão-do-banhado</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
+                </p>
+              </div>
+
+              <div id="Tatu-galinha" class="sub-description">
+                <h2>Tatu-galinha</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
+                </p>
             </div>
 
           </div>
 
-          <!--SECOND TAB - Répteis-->
-          <div id="Répteis" class="tab-secundary">
-
-            <button class="tablink" onclick="tabbers(event, 'Ouriço-cacheiro')">Ouriço-cacheiro</button>
-            <button class="tablink" onclick="tabbers(event, 'Preá')">Preá</button>
-
-            <div id="Ouriço-cacheiro" class="description">
-              <h2>Ouriço-cacheiro</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
-              </p>
-            </div>
-
-            <div id="Preá" class="description">
-              <h2>Preá</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
-              </p>
-            </div>
-
-          </div>
-
-          <!--SECOND TAB - Aves-->
-          <div id="Aves" class="tab-secundary">
-
-            <button class="tablink" onclick="tabbers(event, 'Ratão-do-banhado')">Ratão-do-banhado</button>
-            <button class="tablink" onclick="tabbers(event, 'Tatu-galinha')">Tatu-galinha</button>
-
-            <div id="Ratão-do-banhado" class="description">
-              <h2>Ratão-do-banhado</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
-              </p>
-            </div>
-
-            <div id="Tatu-galinha" class="description">
-              <h2>Tatu-galinha</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Sequi amet quis commodi veniam recusandae est possimus pariatur? Necessitatibus alias aliquam tempora fuga commodi tenetur modi doloribus, maiores placeat totam consequatur.
-              </p>
-          </div>
-
-        </div>
-      </section> <!--Tabber-->
+        </section> 
+      </section><!--Tabber-->
     </section> <!--Container-->
+
+    <button onclick="topFunction()" class="back-top">&#8593;</button>
 
     <!-- Optional JavaScript -->
     <script type="text/javascript" src="js/script.js"></script>
@@ -220,5 +229,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
   </body>
 </html>
