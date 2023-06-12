@@ -56,7 +56,7 @@ function tabbers(evt, Name) {
   }
 
 //function button back-top
-let backTop = document.getElementById("myBtn");
+let backTop = document.getElementByClassName("back-top");
 
 window.onscroll = function() {scrollFunction()};
 
