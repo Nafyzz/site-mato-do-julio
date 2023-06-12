@@ -137,7 +137,7 @@
 
 .sub-contact > li > a:hover{
     color: var(--text-color-light);
-    text-decoration: underline;
+    text-decoration: solid 1px underline;
 }
 
 /* FOOTER */
@@ -150,7 +150,6 @@
     padding: 25px;
     margin-top: 5px;
 }
-
 
 .first-column , .second-column {
     margin-right: 50px;

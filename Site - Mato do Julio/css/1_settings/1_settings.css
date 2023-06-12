@@ -11,6 +11,7 @@
 }
 
 .container{
+    background-color: rgba(245, 245, 220, 0.405);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "header header"
@@ -18,8 +19,8 @@
                          "article picture"
                          "contact contact"
                          "footer footer";
-    width: 80%;
-    margin: 25px auto;
+    width: 90%;
+    margin: 20px auto;
     font-family: var(--font-primary);
 }
 

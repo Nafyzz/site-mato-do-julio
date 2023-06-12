@@ -1,10 +1,43 @@
-//Function Tab (adicionar function sub-tablink - sumir button)
-
+//Function Tab 
 function tabbers(evt, Name) {
-    var i, x, y, z, tablinks, subtablinks;
+    var i, x, y, z, tablinks;
+
+    //hidden description
     x = document.getElementsByClassName("description");
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";
+    }
+
+    y = document.getElementsByClassName("description-main");
+    for (i = 0; i < y.length; i++) {
+      y[i].style.display = "none";
+    }
+    
+    z = document.getElementsByClassName("sub-description");
+    for (i = 0; i < z.length; i++) {
+      z[i].style.display = "none";
+    }
+
+    //hidden sub-tablink
+    tsm = document.getElementsByClassName("tab-secundary-mamiferos");
+    for (i = 0; i < tsm.length; i++) {
+      tsm[i].style.display = "none";
+    }
+
+    tsr = document.getElementsByClassName("tab-secundary-repteis");
+    for (i = 0; i < tsr.length; i++) {
+      tsr[i].style.display = "none";
+    }
+
+    tsa = document.getElementsByClassName("tab-secundary-aves");
+    for (i = 0; i < tsa.length; i++) {
+      tsa[i].style.display = "none";
+    }
+
+    //function tablink
+    tablinks = document.getElementsByClassName("main-tablink");
+    for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" red", "");
     }
 
     tablinks = document.getElementsByClassName("tablink");
@@ -12,31 +45,19 @@ function tabbers(evt, Name) {
       tablinks[i].className = tablinks[i].className.replace(" red", "");
     }
 
-    z = document.getElementsByClassName("sub-description");
-    for (i = 0; i < z.length; i++) {
-      z[i].style.display = "none";
-    }
-
-    subtablinks = document.getElementsByClassName("sub-tablink");
+    
+    tablinks = document.getElementsByClassName("sub-tablink");
     for (i = 0; i < x.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" red", "");
     }
-
-
-   // y = document.getElementsByClassName("sub-tablink");
-   // for (i = 0; i < y.length; i++) {
-   //   y[i].style.display = "none";
-   //}
-
 
     document.getElementById(Name).style.display = "block";
     evt.currentTarget.className += " red";
   }
 
-//Function button back to top
+//function button back-top
 let backTop = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -47,7 +68,6 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
