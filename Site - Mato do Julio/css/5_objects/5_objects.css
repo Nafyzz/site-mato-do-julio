@@ -1,14 +1,13 @@
 /* MENU */
 .navigation {
     display: flex;
-    align-items: center;
-    justify-content: center;
     text-transform: uppercase;
-    
 }
 
 .navigation > ul > li {
     display: inline-block;
+    position: relative;
+    top: 8px;
 }
 
 .navigation > ul > li > a {
@@ -22,7 +21,7 @@
 }
 
 .navigation > ul > li > a:hover {
-    padding: 10px 5px;
+    padding: 8px 5px;
     border-bottom: solid 3px;
     transition-duration: 0.5s;
 }
@@ -37,6 +36,8 @@
 
 #brand > h1 {
     color: var(--color-primary);
+    position: relative;
+    top: 6px;
     font-size: larger;
     font-weight: 800;
 }
@@ -141,7 +142,6 @@
 }
 
 /* FOOTER */
-
 .footer {
     background-color: var(--);
     display: flex;

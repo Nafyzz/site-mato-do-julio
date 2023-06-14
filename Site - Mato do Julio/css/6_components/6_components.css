@@ -19,8 +19,7 @@
 .submenu > li {
     background: var(--text-color-light);
     color: var(--color-secundary);
-    border-bottom: 1px solid var(--color-secundary);
-  
+    border-bottom: 2px solid var(--color-secundary);
     padding: 1.2em 1em;
     transition: 0.3s all linear;
     display: block;
@@ -41,21 +40,12 @@
 .tabber{
     display: flex;
     flex-direction: column;
-    width: 200%;
-}
-
-.tabber-flora {
-    background-color: antiquewhite;
-    display: flex;
-    padding-left: 10px;
-    margin: 25px auto;
-}
-
-.tabber-fauna {
-    background-color: antiquewhite;
-    display: flex;
-    padding-left: 10px;
     width: 100%;
+}
+
+.tabber-flora, .tabber-fauna {
+    background-color: antiquewhite;
+    padding-left: 10px;
     margin: 25px auto;
 }
 
@@ -64,6 +54,7 @@
     color: var(--text-dark);
     display: flex;
     text-align: center;
+    justify-content: baseline;
     text-transform: uppercase;
     position: relative;
     width: 30%;
@@ -80,9 +71,6 @@
 
 .transition {
     background-color: var(--color-secundary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 0;
     width: 1rem;
     height: 3rem;
@@ -92,8 +80,8 @@
 
 .text-name {
     color: var(--text-color-dark);
-    text-align: center;
     position: absolute;
+    z-index: 10;
     text-transform: uppercase;
     top: 0;
     left: 0;
@@ -130,7 +118,7 @@ button:hover .transition {
     height: 2.5rem;
 }
 
-/*outro span transition*/
+/*other span transition*/
 .folder {
     background-color: var(--color-secundary);
 }
@@ -146,75 +134,57 @@ button:hover .transition {
 }
 
 button:hover .folder-name {
-    color: var(--text-color-light);
+    color: var(--color-secundary);
 }
 
 /* Fichario */
 .tab-primary-two {
     display: flex;
+    width: 99%;
     justify-content: flex-end;
     margin-right: 15px;
+}
+
+.tab-secundary-mamiferos, .tab-secundary-repteis, .tab-secundary-aves{
+    align-items: flex-end;
 }
 
 .tab-secundary-repteis, .tab-secundary-aves {
     display: none;
 }
 
-.fauna{
-    color: var(--text-color-dark);
-}
-
 .tab-title {
     color: var(--text-dark);
     font-size: larger;
     text-transform: uppercase;
-    margin-top: 1vw;
+    margin: 1vw 1vw;
 }
 
 .tab-intro{
     margin: 1vw 1vw;
 }
 
-.description-main{
+.description-main, .description, .sub-description {
     color: var(--text-dark);
     background: var(--text-color-light);
-    width: 50%;
+    width: 69%;
+    position: relative;
+    bottom: 96px;
+    left: 330px;
     font-size: 15px;
     line-height: 25px;
     padding: 20px 20px 10px;
-    margin-top: 10px;
 }
 
-.description {
+.description, .sub-description {
     display: none;
-    color: var(--text-dark);
-    background: var(--text-color-light);
-    width: 50%;
-    font-size: 15px;
-    line-height: 25px;
-    padding: 20px 20px 10px;
-    margin-top: 10px;
+}
+.description-flora{
+    position: relative;
+    bottom: 3.1vw;
 }
 
-.sub-description {
-    display: none;
-    color: var(--text-dark);
-    background: var(--text-color-light);
-    width: 50%;
-    font-size: 15px;
-    line-height: 25px;
-    padding: 20px 20px 10px;
-    margin-top: 10px;
-}
-
-.description > h2 {
-    color: var(--text-dark);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin: 0 0 7px 0;
-}
-.description-main > h2 {
+.description, .description-main, .sub-description > h2 {
     color: var(--text-dark);
     font-weight: 700;
     text-transform: uppercase;
@@ -222,11 +192,11 @@ button:hover .folder-name {
     margin: 0 0 7px 0;
 }
 
-.sub-description > h2 {
+.description, .description-main, .sub-description > p {
     color: var(--text-dark);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;    
     margin: 0 0 7px 0;
 }
 

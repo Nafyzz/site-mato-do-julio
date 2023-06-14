@@ -12,13 +12,6 @@
 
 .container{
     background-color: rgba(245, 245, 220, 0.405);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "header header"
-                         "article picture"
-                         "article picture"
-                         "contact contact"
-                         "footer footer";
     width: 90%;
     margin: 20px auto;
     font-family: var(--font-primary);
@@ -26,24 +19,20 @@
 
 .header{
     background-color: antiquewhite;
-    grid-area: header;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: var(--font-primary);
     height: 80px;
-    
 }
 
 .contact{
     background-color: antiquewhite;
-    grid-area: contact;
     display: table-row;
 }
 
 .footer{
     background-color: antiquewhite;
-    grid-area: footer;
     display: table-row;
     align-items: center;
     justify-content: center;
