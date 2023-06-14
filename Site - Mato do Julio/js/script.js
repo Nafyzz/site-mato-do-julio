@@ -19,7 +19,7 @@ function tabbers(evt, Name) {
     }
 
     //hidden sub-tablink
-    tsm = document.getElementsByClassName("tab-secundary-mamiferos");
+    /*tsm = document.getElementsByClassName("tab-secundary-mamiferos");
     for (i = 0; i < tsm.length; i++) {
       tsm[i].style.display = "none";
     }
@@ -32,6 +32,41 @@ function tabbers(evt, Name) {
     tsa = document.getElementsByClassName("tab-secundary-aves");
     for (i = 0; i < tsa.length; i++) {
       tsa[i].style.display = "none";
+    }*/
+
+    if (document.getElementsByClassName("tab-secundary-mamiferos")){
+      tsr = document.getElementsByClassName("tab-secundary-repteis");
+      for (i = 0; i < tsr.length; i++) {
+      tsr[i].style.display = "none";
+      }
+
+      tsa = document.getElementsByClassName("tab-secundary-aves");
+      for (i = 0; i < tsa.length; i++) {
+      tsa[i].style.display = "none";
+      }
+
+    } else if (document.getElementsByClassName("tab-secundary-repteis")){
+      tsm = document.getElementsByClassName("tab-secundary-mamiferos");
+      for (i = 0; i < tsm.length; i++) {
+      tsm[i].style.display = "none";
+      }
+
+      tsa = document.getElementsByClassName("tab-secundary-aves");
+      for (i = 0; i < tsa.length; i++) {
+      tsa[i].style.display = "none"; 
+      }
+    
+    } else {
+      tsm = document.getElementsByClassName("tab-secundary-mamiferos");
+      for (i = 0; i < tsm.length; i++) {
+      tsm[i].style.display = "none";
+      }
+
+      tsr = document.getElementsByClassName("tab-secundary-repteis");
+      for (i = 0; i < tsr.length; i++) {
+      tsr[i].style.display = "none";
+      }
+
     }
 
     //function tablink
@@ -44,7 +79,6 @@ function tabbers(evt, Name) {
     for (i = 0; i < x.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" red", "");
     }
-
     
     tablinks = document.getElementsByClassName("sub-tablink");
     for (i = 0; i < x.length; i++) {
