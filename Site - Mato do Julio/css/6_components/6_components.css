@@ -36,11 +36,9 @@
 }
 
 /* TABBER */
-
 .tabber{
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    flex-flow: row wrap;
 }
 
 .tabber-flora, .tabber-fauna {
@@ -73,7 +71,7 @@
     background-color: var(--color-secundary);
     margin: 0;
     width: 1rem;
-    height: 3rem;
+    height: 2.681rem;
     -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
 }
@@ -87,7 +85,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 0.75rem 0;
+    padding: 0.6rem 0;
     margin: 0 0 0 1rem;
     font-weight: 700;
     line-height: 1.6;
@@ -167,10 +165,9 @@ button:hover .folder-name {
 .description-main, .description, .sub-description {
     color: var(--text-dark);
     background: var(--text-color-light);
-    width: 69%;
     position: relative;
-    bottom: 96px;
     left: 330px;
+    width: 69%;
     font-size: 15px;
     line-height: 25px;
     padding: 20px 20px 10px;
@@ -178,10 +175,6 @@ button:hover .folder-name {
 
 .description, .sub-description {
     display: none;
-}
-.description-flora{
-    position: relative;
-    bottom: 3.1vw;
 }
 
 .description, .description-main, .sub-description > h2 {

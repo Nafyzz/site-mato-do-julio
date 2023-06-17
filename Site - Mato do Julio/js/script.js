@@ -1,20 +1,22 @@
 //Function Tab 
 function tabbers(evt, Name, Class) {
   //hidden description
-  x = document.getElementsByClassName("description");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-
   y = document.getElementsByClassName("description-main");
   for (i = 0; i < y.length; i++) {
     y[i].style.display = "none";
   }
-  
+  x = document.getElementsByClassName("");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+
   z = document.getElementsByClassName("sub-description");
   for (i = 0; i < z.length; i++) {
     z[i].style.display = "none";
   }
+  
+  
+
 
   //hidden sub-tablink
   switch (Class) {
@@ -104,7 +106,7 @@ function tabbers(evt, Name, Class) {
 }
 
 //function button back-top
-let backTop = document.getElementByClassName("back-top");
+let backTop = document.getElementsByClassName("back-top");
 
 window.onscroll = function() {scrollFunction()};
 
