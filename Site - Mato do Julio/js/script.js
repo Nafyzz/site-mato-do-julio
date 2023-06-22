@@ -1,14 +1,14 @@
 //Function Tab 
 function tabbers(evt, Name, Class) {
   //hidden description
+  x = document.getElementsByClassName("description");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+
   y = document.getElementsByClassName("description-main");
   for (i = 0; i < y.length; i++) {
     y[i].style.display = "none";
-  }
-
-  x = document.getElementsByClassName("");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
   }
 
   z = document.getElementsByClassName("sub-description");
@@ -90,12 +90,12 @@ function tabbers(evt, Name, Class) {
   }
 
   tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
+  for (i = 0; i < y.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" checked", "");
   }
   
   tablinks = document.getElementsByClassName("sub-tablink");
-  for (i = 0; i < x.length; i++) {
+  for (i = 0; i < z.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" checked", "");
   }
 
@@ -104,7 +104,7 @@ function tabbers(evt, Name, Class) {
 }
 
 //function button back-top
-let backTop = document.getElementsByClassName("back-top");
+/*let backTop = document.getElementsByClassName("back-top");
 
 window.onscroll = function() {scrollFunction()};
 
@@ -119,4 +119,4 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-}
+}*/
