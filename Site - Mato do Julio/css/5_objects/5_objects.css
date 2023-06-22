@@ -182,21 +182,21 @@
 }
 
 .contact-footer ul > li > a.whatsapp:hover {
-    background-color: var(--color-secundary-complement);
+    background-color: var(--color-secundary);
     border: 2px solid var(--color-secundary);
 }
 
 .contact-footer > ul > li > a.instagram:hover {
-    background-color: var(--color-secundary-complement);
+    background-color: var(--color-secundary);
     border: 2px solid var(--color-secundary);
 }
 
 .contact-footer > ul > li > a.facebook:hover {
-    background-color: var(--color-secundary-complement);
+    background-color: var(--color-secundary);
     border: 2px solid var(--color-secundary);
 }
 
 .contact-footer > ul > li > a.tiktok:hover {
-    background-color: var(--color-secundary-complement);
+    background-color: var(--color-secundary);
     border: 2px solid var(--color-secundary);
 }

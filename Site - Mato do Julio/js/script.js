@@ -1,7 +1,7 @@
 //Function Tab 
 function tabbers(evt, Name, Class) {
   //hidden description
-  x = document.getElementsByClassName("description");
+  x = document.getElementsByClassName("");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
@@ -34,6 +34,7 @@ function tabbers(evt, Name, Class) {
       tsa[i].style.display = "none";
     }
       break;
+
     case 'tab-secundary-repteis':
       tsr = document.getElementsByClassName("tab-secundary-repteis");
       for (i = 0; i < tsr.length; i++) {
@@ -50,6 +51,7 @@ function tabbers(evt, Name, Class) {
       tsa[i].style.display = "none"; 
     }
       break;
+
     case 'tab-secundary-aves':
       tsa = document.getElementsByClassName("tab-secundary-aves");
       for (i = 0; i < tsa.length; i++) {
@@ -66,6 +68,59 @@ function tabbers(evt, Name, Class) {
       tsr[i].style.display = "none";
     }
       break;
+
+  //mobile tab
+      case 'tab-secundary-mamiferos-mobile':
+      tsmm = document.getElementsByClassName("tab-secundary-mamiferos-mobile");
+      for (i = 0; i < tsmm.length; i++) {
+      tsmm[i].style.display = "block";
+    }
+
+      tsrm = document.getElementsByClassName("tab-secundary-repteis-mobile");
+      for (i = 0; i < tsrm.length; i++) {
+      tsrm[i].style.display = "none";
+    }
+
+      tsam = document.getElementsByClassName("tab-secundary-aves-mobile");
+      for (i = 0; i < tsam.length; i++) {
+      tsam[i].style.display = "none";
+    }
+      break;
+
+      case 'tab-secundary-repteis-mobile':
+      tsrm = document.getElementsByClassName("tab-secundary-repteis-mobile");
+      for (i = 0; i < tsrm.length; i++) {
+      tsrm[i].style.display = "block";
+    }
+
+      tsmm = document.getElementsByClassName("tab-secundary-mamiferos-mobile");
+      for (i = 0; i < tsmm.length; i++) {
+      tsmm[i].style.display = "none";
+    }
+
+      tsam = document.getElementsByClassName("tab-secundary-aves-mobile");
+      for (i = 0; i < tsam.length; i++) {
+      tsam[i].style.display = "none"; 
+    }
+      break;
+
+      case 'tab-secundary-aves-mobile':
+      tsam = document.getElementsByClassName("tab-secundary-aves-mobile");
+      for (i = 0; i < tsam.length; i++) {
+      tsam[i].style.display = "block"; 
+    }
+      
+      tsmm = document.getElementsByClassName("tab-secundary-mamiferos-mobile");
+      for (i = 0; i < tsmm.length; i++) {
+      tsmm[i].style.display = "none";
+    }
+
+      tsrm = document.getElementsByClassName("tab-secundary-repteis-mobile");
+      for (i = 0; i < tsrm.length; i++) {
+      tsrm[i].style.display = "none";
+    }
+      break;
+
     default:
       tsm = document.getElementsByClassName("tab-secundary-mamiferos");
       for (i = 0; i < tsm.length; i++) {
@@ -78,6 +133,21 @@ function tabbers(evt, Name, Class) {
     }
 
       tsa = document.getElementsByClassName("tab-secundary-aves");
+      for (i = 0; i < tsa.length; i++) {
+      tsa[i].style.display = "none";
+    }
+      
+      tsm = document.getElementsByClassName("tab-secundary-mamiferos-mobile");
+      for (i = 0; i < tsm.length; i++) {
+      tsm[i].style.display = "none";
+    }
+
+      tsr = document.getElementsByClassName("tab-secundary-repteis-mobile");
+      for (i = 0; i < tsr.length; i++) {
+      tsr[i].style.display = "none";
+    }
+
+      tsa = document.getElementsByClassName("tab-secundary-aves-mobile");
       for (i = 0; i < tsa.length; i++) {
       tsa[i].style.display = "none";
     }
@@ -101,6 +171,50 @@ function tabbers(evt, Name, Class) {
 
   document.getElementById(Name).style.display = "block";
   evt.currentTarget.className += " checked";
+}
+
+//function toggle
+var theToggle = document.getElementById('toggle');
+
+// based on Todd Motto functions
+// https://toddmotto.com/labs/reusable-js/
+
+// hasClass
+function hasClass(elem, className) {
+	return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+}
+// addClass
+function addClass(elem, className) {
+    if (!hasClass(elem, className)) {
+    	elem.className += ' ' + className;
+    }
+}
+// removeClass
+function removeClass(elem, className) {
+	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
+	if (hasClass(elem, className)) {
+        while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
+            newClass = newClass.replace(' ' + className + ' ', ' ');
+        }
+        elem.className = newClass.replace(/^\s+|\s+$/g, '');
+    }
+}
+// toggleClass
+function toggleClass(elem, className) {
+	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
+    if (hasClass(elem, className)) {
+        while (newClass.indexOf(" " + className + " ") >= 0 ) {
+            newClass = newClass.replace( " " + className + " " , " " );
+        }
+        elem.className = newClass.replace(/^\s+|\s+$/g, '');
+    } else {
+        elem.className += ' ' + className;
+    }
+}
+
+theToggle.onclick = function() {
+   toggleClass(this, 'on');
+   return false;
 }
 
 //function button back-top

@@ -45,7 +45,22 @@
           </nav>
 
         <button class="button" id="donate">DOE AGORA</button>
+
+        <div class="menu-toggle">
+            <a id="toggle" href="#menu" ><span></span></a>
+            <div class="menu">
+              <ul>
+                <li><a href="#">Quem somos</a></li>
+                <li><a href="#">O que fazemos</a></li>
+                <li><a href="sobre-o-mato.html" rel="next">Sobre o Mato</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
+              </ul>
+            </div>
+          </div>
+          
       </header>
+
 
       
       <!--FLORA TABBER-->
@@ -65,6 +80,16 @@
                 <button class="tablink" onclick="tabbers(event, 'PT', 'tab-secundary-mamiferos')"><span class="transition"></span><span class="text-name">Representantes de P-T</span></button>
                 <button class="tablink" onclick="tabbers(event, 'TX', 'tab-secundary-mamiferos')"><span class="transition"></span><span class="text-name">Representantes de T-X</span></button>
               </div>
+              <div class="tab-primary-one-mobile">
+                <button class="tablink" onclick="tabbers(event, 'AB', 'tab-secundary-mamiferos')"><span class="transition"></span><span class="text-name">A-B</span></button>
+                <button class="tablink" onclick="tabbers(event, 'BC', 'tab-secundary-mamiferos')"><span class="transition"></span><span class="text-name">B-C</span></button>
+                <button class="tablink" onclick="tabbers(event, 'CC', 'tab-secundary-mamiferos')"><span class="transition"></span><span class="text-name">C-C</span></button>
+                <button class="tablink" onclick="tabbers(event, 'EG', 'tab-secundary-mamiferos')"><span class="transition"></span><span class="text-name">E-G</span></button>
+                <button class="tablink" onclick="tabbers(event, 'GL', 'tab-secundary-mamiferos')"><span class="transition"></span><span class="text-name">G-L</span></button>
+                <button class="tablink" onclick="tabbers(event, 'LP', 'tab-secundary-mamiferos')"><span class="transition"></span><span class="text-name">L-P</span></button>
+                <button class="tablink" onclick="tabbers(event, 'PT', 'tab-secundary-mamiferos')"><span class="transition"></span><span class="text-name">P-T</span></button>
+                <button class="tablink" onclick="tabbers(event, 'TX', 'tab-secundary-mamiferos')"><span class="transition"></span><span class="text-name">T-X</span></button>
+              </div>
             </div>
 
             <div id="AB" class="description-main">
@@ -75,7 +100,7 @@
                 <b>Nome:</b>	Amoreira 	<b>Espécie:</b>	Morus nigra L.	<b>Hábito:</b>	Arbóreo 	<b>Planta:</b>	Exótica	<br>
                 <b>Nome:</b>	Angico-vermelho	<b>Espécie:</b>	Parapiptadenia rigida (Benth.) Brenan	<b>Hábito:</b>	Arbóreo	<b>Planta:</b>	Nativa	<br>
                 <b>Nome:</b>	Araçazeiro 	<b>Espécie:</b>	Psidium cattleianum Sabine 	<b>Hábito:</b>	Arbóreo	<b>Planta:</b>	Nativa	<br>
-                <b>Nome:</b>	Aspargo-decorativo	<b>Espécie:</b>	Asparagus setaceus (Kunth) Jessop	<b>Hábito:</b>	Trepadeira	<b>Planta:</b>	Exótica	<br>
+                <b>Nome:</b>	Aspargo-decorativo	<b>Espécie:</b>	Asparagus setaceus (K.) Jessop	<b>Hábito:</b>	Trepadeira	<b>Planta:</b>	Exótica	<br>
                 <b>Nome:</b>	Aroeira-periquita	<b>Espécie:</b>	Schinus molle L. 	<b>Hábito:</b>	Arbóreo	<b>Planta:</b>	Nativa	<br>
                 <b>Nome:</b>	Aroeira-vermelha 	<b>Espécie:</b>	Schinus terebinthifolia Raddi 	<b>Hábito:</b>	Arbóreo	<b>Planta:</b>	Nativa	<br>
                 <b>Nome:</b>	Bananeira 	<b>Espécie:</b>	Musa x paradisíaca L.	<b>Hábito:</b>	Cespitoso 	<b>Planta:</b>	Exótica	<br></p>
@@ -189,17 +214,20 @@
           </div>
           
           <div class="tab-primary-two">
-
             <button class="main-tablink" onclick="tabbers(event, 'Mamíferos')"><span class="folder"></span><span class="folder-name">Mamíferos</span></button>
             <button class="main-tablink" onclick="tabbers(event, 'Répteis')"><span class="folder"></span><span class="folder-name">Répteis</span></button>
             <button class="main-tablink" onclick="tabbers(event, 'Aves')"><span class="folder"></span><span class="folder-name">Aves</span></button>
-
           </div>
+          <div class="tab-primary-two-mobile">
+            <button class="main-tablink" onclick="tabbers(event, 'Mamíferos-mobile')"><span class="folder"></span><span class="folder-name">Mamíferos</span></button>
+            <button class="main-tablink" onclick="tabbers(event, 'Répteis-mobile')"><span class="folder"></span><span class="folder-name">Répteis</span></button>
+            <button class="main-tablink" onclick="tabbers(event, 'Aves-mobile')"><span class="folder"></span><span class="folder-name">Aves</span></button>
+          </div>
+
           <div class="fauna">
             <!--SECOND TAB - Mamíferos-->
             <div class="fauna-menu">
               <div id="Mamíferos" class="tab-secundary-mamiferos">
-
                 <button class="sub-tablink" onclick="tabbers(event, 'Graxaim-do-mato', 'tab-secundary-mamiferos')"><span class="transition"></span><span class="text-name">Graxaim-do-mato</span></button>
                 <button class="sub-tablink" onclick="tabbers(event, 'Gambá-de-orelha-branca', 'tab-secundary-mamiferos')"><span class="transition"></span><span class="text-name">Gambá-de-orelha-branca</span></button>
                 <button class="sub-tablink" onclick="tabbers(event, 'Ouriço-cacheiro', 'tab-secundary-mamiferos')"><span class="transition"></span><span class="text-name">Ouriço-cacheiro</span></button>
@@ -210,7 +238,19 @@
                 <button class="sub-tablink" onclick="tabbers(event, 'Morcego-fruteiro', 'tab-secundary-mamiferos')"><span class="transition"></span><span class="text-name">Morcego-fruteiro</span></button>
                 <button class="sub-tablink" onclick="tabbers(event, 'Morceguinho-das-casas', 'tab-secundary-mamiferos')"><span class="transition"></span><span class="text-name">Morceguinho-das-casas</span></button>
                 <button class="sub-tablink" onclick="tabbers(event, 'Rato-das-taquareiras', 'tab-secundary-mamiferos')"><span class="transition"></span><span class="text-name">Rato-das-taquareiras</span></button>
+              </div>
 
+              <div id="Mamíferos-mobile" class="tab-secundary-mamiferos-mobile">
+                <button class="sub-tablink" onclick="tabbers(event, 'Graxaim-do-mato', 'tab-secundary-mamiferos-mobile')"><span class="transition"></span><span class="text-name">Graxaim</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Gambá-de-orelha-branca', 'tab-secundary-mamiferos-mobile')"><span class="transition"></span><span class="text-name">Gambá</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Ouriço-cacheiro', 'tab-secundary-mamiferos-mobile')"><span class="transition"></span><span class="text-name">Ouriço</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Preá', 'tab-secundary-mamiferos-mobile')"><span class="transition"></span><span class="text-name">Preá</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Ratão-do-banhado', 'tab-secundary-mamiferos-mobile')"><span class="transition"></span><span class="text-name">Ratão</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Tatu-galinha', 'tab-secundary-mamiferos-mobile')"><span class="transition"></span><span class="text-name">Tatu</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Lontra', 'tab-secundary-mamiferos-mobile')"><span class="transition"></span><span class="text-name">Lontra</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Morcego-fruteiro', 'tab-secundary-mamiferos-mobile')"><span class="transition"></span><span class="text-name">Morcego</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Morceguinho-das-casas', 'tab-secundary-mamiferos-mobile')"><span class="transition"></span><span class="text-name">Morceguinho</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Rato-das-taquareiras', 'tab-secundary-mamiferos-mobile')"><span class="transition"></span><span class="text-name">Rato</span></button>
               </div>
             </div>
 
@@ -287,7 +327,6 @@
             <!--SECOND TAB - Répteis-->
             <div class="fauna-menu">
               <div id="Répteis" class="tab-secundary-repteis">
-
                 <button class="sub-tablink" onclick="tabbers(event, 'Teíu', 'tab-secundary-repteis')"><span class="transition"></span><span class="text-name">Teíu</span></button>
                 <button class="sub-tablink" onclick="tabbers(event, 'Lagarto', 'tab-secundary-repteis')"><span class="transition"></span><span class="text-name">Lagarto</span></button>
                 <button class="sub-tablink" onclick="tabbers(event, 'Lagartixa-doméstica', 'tab-secundary-repteis')"><span class="transition"></span><span class="text-name">Lagartixa-doméstica</span></button>
@@ -298,7 +337,18 @@
                 <button class="sub-tablink" onclick="tabbers(event, 'Papa-lesma', 'tab-secundary-repteis')"><span class="transition"></span><span class="text-name">Papa-lesma</span></button>
                 <button class="sub-tablink" onclick="tabbers(event, 'Coral-falsa', 'tab-secundary-repteis')"><span class="transition"></span><span class="text-name">Coral-falsa</span></button>
                 <button class="sub-tablink" onclick="tabbers(event, 'Cobra-lisa', 'tab-secundary-repteis')"><span class="transition"></span><span class="text-name">Cobra-lisa</span></button>
-
+              </div>
+              <div id="Répteis-mobile" class="tab-secundary-repteis-mobile">
+                <button class="sub-tablink" onclick="tabbers(event, 'Teíu', 'tab-secundary-repteis-mobile')"><span class="transition"></span><span class="text-name">Teíu</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Lagarto', 'tab-secundary-repteis-mobile')"><span class="transition"></span><span class="text-name">Lagarto</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Lagartixa-doméstica', 'tab-secundary-repteis-mobile')"><span class="transition"></span><span class="text-name">Lagartixa</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Cobra-cega', 'tab-secundary-repteis-mobile')"><span class="transition"></span><span class="text-name">Cobra</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Cágado-de-espinhos', 'tab-secundary-repteis-mobile')"><span class="transition"></span><span class="text-name">Cágado</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Tartaruga-tigre-d’água', 'tab-secundary-repteis-mobile')"><span class="transition"></span><span class="text-name">Tartaruga</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Cobra-verde', 'tab-secundary-repteis-mobile')"><span class="transition"></span><span class="text-name">Cobra</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Papa-lesma', 'tab-secundary-repteis-mobile')"><span class="transition"></span><span class="text-name">Papa</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Coral-falsa', 'tab-secundary-repteis-mobile')"><span class="transition"></span><span class="text-name">Coral</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Cobra-lisa', 'tab-secundary-repteis-mobile')"><span class="transition"></span><span class="text-name">Cobra</span></button>
               </div>
             </div>
 
@@ -375,7 +425,6 @@
             <!--SECOND TAB - Aves-->
             <div class="fauna-menu">
               <div id="Aves" class="tab-secundary-aves">
-
                 <button class="sub-tablink" onclick="tabbers(event, 'Codorna-amarela', 'tab-secundary-aves')"><span class="transition"></span><span class="text-name">Codorna-amarela</span></button>
                 <button class="sub-tablink" onclick="tabbers(event, 'Irerê', 'tab-secundary-aves')"><span class="transition"></span><span class="text-name">Irerê</span></button>
                 <button class="sub-tablink" onclick="tabbers(event, 'Marreca-de-coleira', 'tab-secundary-aves')"><span class="transition"></span><span class="text-name">Marreca-de-coleira</span></button>
@@ -386,7 +435,19 @@
                 <button class="sub-tablink" onclick="tabbers(event, 'Biguá', 'tab-secundary-aves')"><span class="transition"></span><span class="text-name">Biguá</span></button>
                 <button class="sub-tablink" onclick="tabbers(event, 'Biguatinga', 'tab-secundary-aves')"><span class="transition"></span><span class="text-name">Biguatinga</span></button>
                 <button class="sub-tablink" onclick="tabbers(event, 'Socó-boi', 'tab-secundary-aves')"><span class="transition"></span><span class="text-name">Socó-boi</span></button>
-                
+              </div>
+
+              <div id="Aves-mobile" class="tab-secundary-aves-mobile">
+                <button class="sub-tablink" onclick="tabbers(event, 'Codorna-amarela', 'tab-secundary-aves-mobile')"><span class="transition"></span><span class="text-name">Codorna</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Irerê', 'tab-secundary-aves-mobile')"><span class="transition"></span><span class="text-name">Irerê</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Marreca-de-coleira', 'tab-secundary-aves-mobile')"><span class="transition"></span><span class="text-name">Marreca</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Ananaí', 'tab-secundary-aves-mobile')"><span class="transition"></span><span class="text-name">Ananaí</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Aracuã-escamoso', 'tab-secundary-aves-mobile')"><span class="transition"></span><span class="text-name">Aracuã</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Maguari', 'tab-secundary-aves-mobile')"><span class="transition"></span><span class="text-name">Maguari</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Cabeça-seca', 'tab-secundary-aves-mobile')"><span class="transition"></span><span class="text-name">Cabeça-seca</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Biguá', 'tab-secundary-aves-mobile')"><span class="transition"></span><span class="text-name">Biguá</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Biguatinga', 'tab-secundary-aves-mobile')"><span class="transition"></span><span class="text-name">Biguatinga</span></button>
+                <button class="sub-tablink" onclick="tabbers(event, 'Socó-boi', 'tab-secundary-aves-mobile')"><span class="transition"></span><span class="text-name">Socó-boi</span></button>
               </div>
             </div>
 
@@ -525,7 +586,7 @@
 
     </section> <!--Container-->
 
-    <button onclick="topFunction()" class="back-top">&#8593;</button>
+    <button class="back-top" onclick="topFunction()">&#8593;</button>
 
     <!-- Optional JavaScript -->
     <script type="text/javascript" src="js/script.js"></script>

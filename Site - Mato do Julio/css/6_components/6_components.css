@@ -138,11 +138,18 @@ button:hover .folder-name {
 }
 
 /* Fichario */
-.tab-primary-two {
+.tab-primary-one-mobile {
+    display: none;
+}
+
+.tab-primary-two{
     display: flex;
     width: 99%;
     justify-content: flex-end;
     margin-right: 15px;
+}
+.tab-primary-two-mobile {
+    display: none;
 }
 
 .tab-secundary-mamiferos, .tab-secundary-repteis, .tab-secundary-aves {
@@ -150,6 +157,10 @@ button:hover .folder-name {
 }
 
 .tab-secundary-repteis, .tab-secundary-aves {
+    display: none;
+}
+
+.tab-secundary-mamiferos-mobile, .tab-secundary-repteis-mobile, .tab-secundary-aves-mobile {
     display: none;
 }
 
@@ -167,8 +178,10 @@ button:hover .folder-name {
 }
 
 .flora, .fauna {
+    background-color: var(--text-color-light);
     display: flex;
     border-bottom: var(--color-secundary);
+    margin-right: 1vw;
 }
 
 .flora-menu, .fauna-menu {
@@ -203,6 +216,101 @@ button:hover .folder-name {
     text-transform: none;
     letter-spacing: 0;    
     margin: 0 0 7px 0;
+}
+
+/* MENU TOGGLE */
+.menu-toggle {
+    display: none;
+    position: relative;
+    top: 7vh;
+    margin: 20% 0 0 50.9%;
+}
+
+#toggle {
+    display: flex;
+    width: 28px;
+    height: 30px;
+    margin: 30px auto 10px;
+}
+  
+#toggle span:after, #toggle span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -9px;
+}
+
+#toggle span:after {
+    top: 9px;
+}
+
+#toggle span {
+    position: relative;
+    display: block;
+}
+  
+#toggle span, #toggle span:after, #toggle span:before {
+    width: 100%;
+    height: 5px;
+    background-color: var(--color-secundary);
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px;
+}
+  
+#toggle.on span {
+    background-color: transparent;
+}
+
+#toggle.on span:before {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#toggle.on span:after {
+    transform: rotate(-45deg) translate(7px, -8px);
+}
+
+#toggle.on + .menu {
+    opacity: 1;
+    visibility: visible;
+}
+  
+.menu {
+    background: var(--text-color-light);
+    color: var(--text-dark);
+    font-family: var(--font-primary);
+    width: 24.3vw;
+    position: relative;
+    right: 80px;
+    bottom: 15px;
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.30);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .4s;
+}
+
+.menu > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu > ul > li {
+    padding: 1vh;
+    border-bottom: 3px solid var(--color-secundary);
+}
+
+.menu > ul > li > a {
+    border-bottom: 2px var(--color-secundary);
+    color: var(--color-secundary);
+    text-decoration: none;
+    transition: all .2s;
 }
 
 /* BACK TO TOP */
