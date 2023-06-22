@@ -7,20 +7,19 @@
     --color-primary-complement: #5C0308;
     --color-secundary: #2A6B36;
     --color-secundary-complement: #0CA834;
+    --color-secundary-shadow: #076b201b;
     --color-bg-details: #DEDEDE;
     --font-primary:'Roboto', sans-serif;
     --font-secundary: 'Palanquin Dark', Sans-serif;
 }
 
 .container{
-    background-color: rgba(245, 245, 220, 0.405);
     width: 90%;
     margin: 20px auto;
     font-family: var(--font-primary);
 }
 
 .header{
-    background-color: antiquewhite;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,12 +28,10 @@
 }
 
 .contact{
-    background-color: antiquewhite;
     display: table-row;
 }
 
 .footer{
-    background-color: antiquewhite;
     display: table-row;
     align-items: center;
     justify-content: center;

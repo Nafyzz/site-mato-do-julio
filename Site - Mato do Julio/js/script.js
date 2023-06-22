@@ -5,7 +5,7 @@ function tabbers(evt, Name, Class) {
   for (i = 0; i < y.length; i++) {
     y[i].style.display = "none";
   }
-  
+
   x = document.getElementsByClassName("");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
@@ -109,7 +109,7 @@ let backTop = document.getElementsByClassName("back-top");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     backTop.style.display = "block";
   } else {
     backTop.style.display = "none";
