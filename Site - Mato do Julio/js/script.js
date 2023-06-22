@@ -5,6 +5,7 @@ function tabbers(evt, Name, Class) {
   for (i = 0; i < y.length; i++) {
     y[i].style.display = "none";
   }
+  
   x = document.getElementsByClassName("");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
@@ -14,9 +15,6 @@ function tabbers(evt, Name, Class) {
   for (i = 0; i < z.length; i++) {
     z[i].style.display = "none";
   }
-  
-  
-
 
   //hidden sub-tablink
   switch (Class) {
@@ -88,21 +86,21 @@ function tabbers(evt, Name, Class) {
   //function tablink
   tablinks = document.getElementsByClassName("main-tablink");
   for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" red", "");
+    tablinks[i].className = tablinks[i].className.replace(" checked", "");
   }
 
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" red", "");
+    tablinks[i].className = tablinks[i].className.replace(" checked", "");
   }
   
   tablinks = document.getElementsByClassName("sub-tablink");
   for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" red", "");
+    tablinks[i].className = tablinks[i].className.replace(" checked", "");
   }
 
   document.getElementById(Name).style.display = "block";
-  evt.currentTarget.className += " red";
+  evt.currentTarget.className += " checked";
 }
 
 //function button back-top

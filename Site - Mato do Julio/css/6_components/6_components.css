@@ -36,7 +36,7 @@
 }
 
 /* TABBER */
-.tabber{
+.tabber {
     display: flex;
     flex-flow: row wrap;
 }
@@ -55,7 +55,7 @@
     justify-content: baseline;
     text-transform: uppercase;
     position: relative;
-    width: 30%;
+    width: 22vw;
     padding: 12px 20px;
     font-size: 15px;
     font-weight: 700;
@@ -143,7 +143,7 @@ button:hover .folder-name {
     margin-right: 15px;
 }
 
-.tab-secundary-mamiferos, .tab-secundary-repteis, .tab-secundary-aves{
+.tab-secundary-mamiferos, .tab-secundary-repteis, .tab-secundary-aves {
     align-items: flex-end;
 }
 
@@ -153,31 +153,39 @@ button:hover .folder-name {
 
 .tab-title {
     color: var(--text-dark);
-    font-size: larger;
+    font-size: 2rem;
+    font-weight: 700;
     text-transform: uppercase;
     margin: 1vw 1vw;
 }
 
-.tab-intro{
+.tab-intro {
+    font-size: 1.1rem;
     margin: 1vw 1vw;
 }
 
-.description-main, .description, .sub-description {
-    color: var(--text-dark);
-    background: var(--text-color-light);
-    position: relative;
-    left: 330px;
-    width: 69%;
-    font-size: 15px;
-    line-height: 25px;
-    padding: 20px 20px 10px;
+.flora, .fauna {
+    display: flex;
+}
+
+.flora-menu, .fauna-menu {
+    display: flex;
+    flex-direction: column;
 }
 
 .description, .sub-description {
     display: none;
 }
 
-.description, .description-main, .sub-description > h2 {
+.description-main, .description, .sub-description {
+    color: var(--text-dark);
+    background: var(--text-color-light);
+    font-size: 15px;
+    line-height: 25px;
+    padding: 20px 20px 10px;
+}
+
+.description-main > h2, .description > h2, .sub-description > h2 {
     color: var(--text-dark);
     font-weight: 700;
     text-transform: uppercase;
@@ -185,7 +193,7 @@ button:hover .folder-name {
     margin: 0 0 7px 0;
 }
 
-.description, .description-main, .sub-description > p {
+.description-main > p, .description > p, .sub-description > p {
     color: var(--text-dark);
     font-weight: 400;
     text-transform: none;
