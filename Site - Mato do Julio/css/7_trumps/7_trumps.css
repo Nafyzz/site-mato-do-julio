@@ -69,4 +69,13 @@
         display: none;
     }
 
+    .description-main > h2, .description > h2, .sub-description > h2 {
+        color: var(--text-dark);
+        font-size: x-large;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin: 0 0 7px 0;
+    }
+
 }
