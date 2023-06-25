@@ -2,7 +2,7 @@
 .submenu {
     display: none;
     position: absolute;
-    z-index: 10;
+    z-index: 20;
     list-style: none;
     box-shadow: 5px 5px 5px #CCC;
 }
@@ -284,6 +284,7 @@ button:hover .folder-name {
     right: 80px;
     bottom: 15px;
     text-align: center;
+    z-index: 20;
     font-size: large;
     font-weight: 700;
     text-decoration: none;
@@ -331,7 +332,6 @@ button:hover .folder-name {
     width: 40px;
     height: 40px;
     margin-left: 95%; 
-    margin-top: calc(100vh + 50px);
     cursor: pointer;
   }
 

@@ -34,12 +34,15 @@
     margin-right: 10%;
 }
 
-#brand > h1 {
+#brand > h1, #brand > h2  {
     color: var(--color-primary);
     position: relative;
     top: 6px;
     font-size: larger;
     font-weight: 800;
+}
+#brand > h2{
+    display: none;
 }
 
 #brand > img {
@@ -67,6 +70,10 @@
     transition-duration: 0.5s;
 }
 
+#donate-mobile {
+    display: none;
+}
+
 /* CONTACT */
 .contact {
     background-color: var(--color-primary);
@@ -87,18 +94,18 @@
     z-index: 1;
 }
 
-.contact-column > a > img{    
+.contact-column > a > img {    
     width: 150px;
     height: 150px;
 }
 
-.contact-column > h1{
+.contact-column > h1 {
     color: var(--text-color-light);
     font-size: large;
     text-transform: uppercase;
 }
 
-.contact-text{
+.contact-text {
     color: var(--text-color-light);
     margin: 26px 0 32px;
 }
@@ -128,7 +135,7 @@
     text-transform: uppercase;
 }
 
-.contact > div > h2{
+.contact > div > h2 {
     color: var(--text-color-light);
 }
 
@@ -162,7 +169,7 @@
     justify-content: space-around;
 }
 
-.contact-footer > ul > li > a{
+.contact-footer > ul > li > a {
     background-color: var(--color-secundary);
     display: flex;
     align-items: center;
@@ -176,7 +183,7 @@
     transition: all .2s linear;
 }
 
-.contact-footer ul > li > a > img{
+.contact-footer ul > li > a > img {
     width: 25px;
     height: 25px;
 }

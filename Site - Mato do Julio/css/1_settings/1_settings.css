@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-:root{
+:root {
     --text-color-light: #ffffff;
     --text-color-dark: #000000;
     --color-primary: #A90B13;
@@ -13,12 +13,12 @@
     --font-secundary: 'Palanquin Dark', Sans-serif;
 }
 
-.container{
+.container {
     margin: 20px auto;
     font-family: var(--font-primary);
 }
 
-.header{
+.header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,11 +26,11 @@
     height: 80px;
 }
 
-.contact{
+.contact {
     display: table-row;
 }
 
-.footer{
+.footer {
     display: table-row;
     align-items: center;
     justify-content: center;

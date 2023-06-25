@@ -1,53 +1,64 @@
-@media only screen and (max-device-width: 900px) {
-    body{
+@media screen and (max-width: 1000px) {
+    body {
         overflow-x: hidden;
     }
-    .header{
+    .header {
         justify-content: space-between;
         margin: 0 2% 2% 2%;
     }
 
-    /*MENU*/
-    .navigation{
+    /* MENU */
+    .navigation > ul {
+        font-size: small;
+    }
+    #donate {
         display: none;
     }
-    #donate{
-        display: none;
-    }
-    .menu-toggle{
+    #donate-mobile {
         display: block;
     }
 
     /*CONTACT*/
-    .contact{
+    .contact {
         align-items: baseline;
     }
-    .contact-column{
+    .contact-column {
         width: 50%;
     }
-    .contact-text{
+    .contact-text {
         text-align: center;
     }
-    .first-column{
+    .first-column {
         margin-left: 10%;
     }
     .first-column > h2, .second-column > h2 {
         text-transform: uppercase;
         font-size: larger;
     }
-    .back-top{
+    .back-top {
         display: none;
     }
 
     /*SOBRE O MATO*/
-    .tablink, .sub-tablink{
+    .tablink, .sub-tablink {
         width: 18vw;
     }
+    .flora {
+        display: inline-block;
+    }
+    .tab-intro {
+        margin-right: 2vw;
+    }
+    .tablink {
+        display: inline-flex;
+        flex-flow: row wrap;
+        width: 20.1vw;
+    }
 
-    .tab-primary-one{
+    .tab-primary-one {
         display: none;
     }
-    .tab-primary-one-mobile{
+    .tab-primary-one-mobile {
         display: block;
     }
     .tab-primary-two {
@@ -55,7 +66,7 @@
     }
     .tab-primary-two-mobile {
         display: flex;
-        width: 99%;
+        width: 98%;
         justify-content: flex-end;
         margin-right: 15px;
     }
@@ -69,13 +80,87 @@
         display: none;
     }
 
+    .tab-intro {
+        text-align: justify;
+    }
+
     .description-main > h2, .description > h2, .sub-description > h2 {
         color: var(--text-dark);
-        font-size: x-large;
+        font-size: large;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 1px;
         margin: 0 0 7px 0;
     }
 
+}
+
+@media screen and (max-width: 900px) {
+    /*MENU*/
+    #brand > h1 {
+        display: none;
+    }
+    #brand > h2 {
+        display: block;
+    }
+    .navigation {
+        display: none;
+    }
+    #donate {
+        display: none;
+    }
+    #donate-mobile {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    /* MENU */
+    .menu-toggle {
+        display: block;
+        position: relative;
+        top: 10vh;
+        margin: 20% 0 0 25%;
+    }
+    .menu {
+        width: 38vw;
+        position: relative;
+        right: 65px;
+    }
+
+    /*TABBER*/
+    .tab-title {
+        font-size: x-large;
+    }
+    .tab-intro {
+        font-size: medium;
+        margin-right: 2vw;
+    }
+    .flora, .fauna {
+        display: inline-block;
+    }
+    .tablink {
+        display: inline-flex;
+        flex-flow: row wrap;
+        width: 21.35vw;
+    }
+    .sub-tablink {
+        display: inline-flex;
+        flex-flow: row wrap;
+        width: 43.5vw;
+    }
+    .main-tablink {
+        width: 35%;
+    }
+
+    /* PAGE */
+    .contact{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
 }
