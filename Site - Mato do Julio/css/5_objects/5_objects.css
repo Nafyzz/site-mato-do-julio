@@ -74,6 +74,17 @@
     display: none;
 }
 
+/* PRODUCTS */
+.slider-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider-produtos{
+    width: 80vw;
+}
+
+
 /* CONTACT */
 .contact {
     background-color: var(--color-primary);
