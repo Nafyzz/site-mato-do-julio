@@ -217,6 +217,13 @@ theToggle.onclick = function() {
    return false;
 }
 
+//function slider
+$(document).ready(function(){
+  $('.your-class').slick({
+    setting-name: setting-value
+  });
+});
+
 //function button back-top
 /*let backTop = document.getElementsByClassName("back-top");
 
