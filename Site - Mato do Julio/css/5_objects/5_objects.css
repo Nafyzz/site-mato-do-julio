@@ -74,6 +74,41 @@
     display: none;
 }
 
+/* HOME */
+.home-principal{
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    height: 82vh;
+    margin: 2vh 0 2vh 0;
+}
+.home-media-icon{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 7vw;
+    margin-right: 1vw;
+}
+.home-media-icon > ul > li > a > img {
+    width: 20px;
+    margin: 2.5vh 0 2.5vh 0;
+}
+.media-divider {
+    background-color: var(--text-color-light);
+    color: transparent;
+    width: 2px;
+    height: 25vh;
+    margin-left: 1vw;
+}
+.home-info{
+    width: 40vw;
+}
+
+
+.home-action-tab {
+    display: flex;
+}
+
 /* PRODUCTS */
 .gender > button {
     background-color: var(--text-color-light);
@@ -88,6 +123,20 @@
     background-color: var(--color-details);
     color: var(--color-secundary);
 }
+.modelo > button {
+    background-color: var(--text-color-light);
+    color: var(--color-secundary);
+    width: auto;
+    margin: 2.5vh 1vh 0 0;
+    border: solid 2px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.modelo > button:hover{
+    background-color: var(--color-details);
+    color: var(--color-secundary);
+}
+
 .slider-container {
     display: flex;
 }
@@ -123,7 +172,7 @@
     font-size: x-large;
     margin-bottom: 2vh;
 }
-.size >  button {
+.size > button {
     background-color: var(--text-color-light);
     color: var(--color-secundary);
     width: 3.3vw;
@@ -138,7 +187,14 @@
 .buy > h3 {
     font-size: smaller;
 }
-.buy > button{
+.buy > button {
+    background-color: transparent;
+    border: none;
+    width: 25vh;
+    height: 6vh;
+    border-radius: 30px;
+}
+.buy > button > a{
     background-color: var(--color-secundary);
     color: var(--text-color-light);
     display: flex;
@@ -146,11 +202,12 @@
     justify-content: center;
     width: 25vh;
     height: 6vh;
+    text-decoration: none;
     border: none;
     border-radius: 30px;
     font-weight: 500;
 }
-.buy button > img {
+.buy button > a > img {
     margin-left: 0.8vw;
 }
 .description-product > h2 {
