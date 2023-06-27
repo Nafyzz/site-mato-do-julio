@@ -16,22 +16,26 @@
     display: block;
 }
 
-.submenu > li {
+.submenu > li > a {
     background: var(--text-color-light);
     color: var(--color-secundary);
     border-bottom: 2px solid var(--color-secundary);
     padding: 1.2em 1em;
     transition: 0.3s all linear;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 600;
     display: block;
     line-height: 0%;
 }
 
-.submenu > li:hover {
+.submenu > li > a:hover {
     background: var(--color-secundary);
     color: var(--text-color-light);
 }
 
-.submenu > li:active {
+.submenu > li > a:active {
     background: var(--text-color-light);
 }
 

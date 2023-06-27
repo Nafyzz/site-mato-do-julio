@@ -219,43 +219,25 @@ theToggle.onclick = function() {
 
 //function slider
 $(document).ready(function(){
-  $('.slider-produtos').slick({
-    accessibility: true,
-    adaptiveHeight: false,
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
     arrows: true,
-    asNavFor: null,
-    appendArrows: $(element),
-    appendDots: $(element),
-    centerMode: false,
-    cssEase: ease,
-    dots: false,
-    focusOnSelect: false,
-    easing: 'linear',
-    infinite: true,
-    initialSlide: 0,
-    mobileFirst: false,
-    responsive: none,
-    useCSS: true,
-    useTransform: true,
-    variableWidth: false
+    dots: true,
+    fade: true,
+    asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+    asNavFor: '.slider-for',
+    centerMode: true,
+    focusOnSelect: true
   });
 });
 
-$('.slider-for').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  dots: true,
-  fade: true,
-  asNavFor: '.slider-nav'
-});
-$('.slider-nav').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  arrows: false,
-  asNavFor: '.slider-for',
-  centerMode: true,
-  focusOnSelect: true
-});
+
 
 //function button back-top
 /*let backTop = document.getElementsByClassName("back-top");
