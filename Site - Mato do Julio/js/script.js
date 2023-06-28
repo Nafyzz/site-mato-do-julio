@@ -1,21 +1,22 @@
 //Function Tab 
-function tabbers(evt, Name, Class) {
+function tabbers(evt, Name, Class, Section) {
+  console.log(Section)
   //hidden description
-  x = document.getElementsByClassName("");
+  x = document.getElementsByClassName("description-"+Section);
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
 
-  y = document.getElementsByClassName("description-main");
+  y = document.getElementsByClassName("description-main-"+Section);
   for (i = 0; i < y.length; i++) {
     y[i].style.display = "none";
   }
 
-  z = document.getElementsByClassName("sub-description");
+  z = document.getElementsByClassName("sub-description-"+Section);
   for (i = 0; i < z.length; i++) {
     z[i].style.display = "none";
   }
-
+ 
   //hidden sub-tablink
   switch (Class) {
     case 'tab-secundary-mamiferos':
@@ -155,17 +156,17 @@ function tabbers(evt, Name, Class) {
 
   //function tablink
   tablinks = document.getElementsByClassName("main-tablink");
-  for (i = 0; i < x.length; i++) {
+  for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" checked", "");
   }
 
   tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < y.length; i++) {
+  for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" checked", "");
   }
   
   tablinks = document.getElementsByClassName("sub-tablink");
-  for (i = 0; i < z.length; i++) {
+  for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" checked", "");
   }
 

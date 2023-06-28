@@ -193,11 +193,11 @@ button:hover .folder-name {
     flex-direction: column;
 }
 
-.description, .sub-description {
+.description-flora, .sub-description-flora, .description-fauna, .sub-description-fauna {
     display: none;
 }
 
-.description-main, .description, .sub-description {
+.description-main-flora, .description-flora, .sub-description-flora, .description-main-fauna, .description-fauna, .sub-description-fauna {
     color: var(--text-dark);
     background: var(--text-color-light);
     font-size: 15px;
