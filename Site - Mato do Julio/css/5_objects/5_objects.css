@@ -140,13 +140,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1vh 0 1vh 0;
+}
+
+.home-help{
+    background-color: #0000000f;
 }
 
 .home-action > h1, .home-help > h1  {
     font-size: xx-large;
     font-weight: 700;
     text-transform: uppercase;
-    margin-top: 2vh;
+    margin: 2vh 0 1vh 0;
 }
 
 .title-divider {
@@ -162,7 +167,7 @@
 }
 
 .home-action-tab, .home-help-tab {
-    background-color: antiquewhite;
+    /*background-color: antiquewhite;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -170,10 +175,24 @@
 }
 
 .home-action-tab > div > h1, .home-help-tab > div > h1 {
-    margin-top: 2vh;
-   font-size: large;
-   text-transform: uppercase;
-   font-weight: 600;
+    margin: 3vh 0 2vh 0;
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.home-action-tab > div > h2, .home-help-tab > div > h2 {
+    text-align: justify;
+    font-size: medium;
+    font-weight: 400;
+}
+
+.home-action-tab > div > h2{
+    margin: 0 1vw 0 1vw;
+}
+
+.home-help-tab > div > h2{
+    margin-bottom: 2vh;
 }
 
 .saiba-mais {
@@ -186,34 +205,35 @@
     font-weight: 500;
 }
 
-.home-action-tab > div > h2 {
-    text-align: justify;
-    margin: 0.5vw 1vw 0 1vw;
-    font-size: medium;
-    font-weight: 400;
-}
-
 .midia, .fauna-flora, .cuidados {
-    background-color: whitesmoke;
+    background-color: #64646f08;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 22vw;
-    height: 50vh;
+    height: 60vh;
     margin: 1vw;
+    border-radius: 10px;
+    box-shadow: #959da533 0px 8px 24px;    
 }
+
+.midia:hover, .fauna-flora:hover, .cuidados:hover {
+    box-shadow: #0000000f 0px 2px 4px 0px inset;
+}
+
 .camisetas, .canecas, .ajude-nos {
-    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 22vw;
-    height: 50vh;
+    height: 60vh;
     margin: 1vw;
 }
 
+.camisetas > img, .canecas > img, .ajude-nos > img {
+    border-radius: 15px;
+}
 
 /* PRODUCTS */
 .gender > button {
