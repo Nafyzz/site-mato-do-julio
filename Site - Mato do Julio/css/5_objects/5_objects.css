@@ -79,7 +79,7 @@
 /* HOME */
 .home-principal {
     background-color: antiquewhite;
-    background-image: url("img/home-img-resized/home-img.jpg");
+    background-image: url("./img/home-img-resized/home-img.jpg");
     display: flex;
     align-items: center;
     height: 82vh;
