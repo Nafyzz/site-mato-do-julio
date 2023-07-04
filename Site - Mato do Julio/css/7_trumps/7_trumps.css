@@ -107,6 +107,9 @@
     .flora {
         display: inline-block;
     }
+    .description-main-flora > h2, .description-flora > h2 {
+        font-size: larger;
+    }
     .tab-intro {
         margin-right: 2vw;
     }
@@ -176,6 +179,33 @@
     .menu-toggle {
         display: block;
     }
+
+    /* PRODUTOS */
+    .slider-produtos {
+        width: 70vw;
+    }
+
+    .buy > button > a {
+        width: 25vw;
+        height: 4vh;
+    }
+
+    .size >  button {
+        width: 5vw;
+    }
+
+    .gender > button {
+        width: 13vw;
+    }
+    /* MAP */
+    .mapa-interativo {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .map-info > h1, .map-info > h2 {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -240,6 +270,13 @@
         margin-bottom: 1vh;
     }
 
+    .ajude-nos {
+        margin-bottom: 2vh;
+    }
+
+    .home-help > h2 {
+        display: none;
+    }
 
     /*TABBER*/
     .tab-title {
@@ -270,7 +307,7 @@
     .contact{
         display: none;
     }
-    .footer{
+    .footer > p {
         display: none;
     }
 }

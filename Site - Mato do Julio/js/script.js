@@ -234,6 +234,7 @@ $(document).ready(function(){
   });
 });
 
+//function modal map
 
 
 //function button back-top

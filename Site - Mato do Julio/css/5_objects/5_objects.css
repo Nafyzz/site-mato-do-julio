@@ -157,7 +157,7 @@
     margin-left: -50%;
 }
 
-.home-action > h1, .home-help > h1, .home-how > h1  {
+.home-action > h1, .home-help > h1, .home-how > h1 {
     font-size: xx-large;
     font-weight: 700;
     text-transform: uppercase;
@@ -380,10 +380,7 @@
 }
 
 
-
 /* CONTACT */
-
-
 .contact {
     background-color: var(--color-primary);
     display: flex;
