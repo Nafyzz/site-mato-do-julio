@@ -22,7 +22,7 @@
 
 .navigation > ul > li > a:hover {
     padding: 8px 5px;
-    border-bottom: solid 3px;
+    border-bottom: solid 2px;
     transition-duration: 0.5s;
 }
 
@@ -78,12 +78,15 @@
 
 /* HOME */
 .home-principal {
-    background-color: antiquewhite;
-    background-image: url("./img/home-img-resized/home-img.jpg");
     display: flex;
     align-items: center;
+    position: absolute;
     height: 82vh;
-    margin: 2vh 0 0 0;
+}
+
+.home-img {
+    z-index: -10;
+    margin-top: 2vh;
 }
 
 .home-media-icon {
@@ -136,7 +139,12 @@
     font-weight: 700;
 }
 
-.home-action, .home-help {
+.ajude-button:hover{
+    background-color: var(--text-color-light);
+    color: var(--color-secundary);
+}
+
+.home-how, .home-action, .home-help {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,9 +153,11 @@
 
 .home-help{
     background-color: #0000000f;
+    width: 200%;
+    margin-left: -50%;
 }
 
-.home-action > h1, .home-help > h1  {
+.home-action > h1, .home-help > h1, .home-how > h1  {
     font-size: xx-large;
     font-weight: 700;
     text-transform: uppercase;
@@ -231,7 +241,6 @@
     height: 58.5vh;
     margin: 1vw;
     border-radius: 15px;
-
 }
 
 .camisetas > img, .canecas > img, .ajude-nos > img {
@@ -239,6 +248,9 @@
 }
 
 /* PRODUCTS */
+.gender, .modelo{
+    margin-left: 3vw;
+}
 .gender > button {
     background-color: var(--text-color-light);
     color: var(--color-secundary);
@@ -275,12 +287,12 @@
 
 .slider-produtos {
     width: 40vw;
-    padding: 3vw;
+    padding: 3vh 3vw 3vh 3vw;
 }
 
 .slider-info {
     color: var(--color-secundary);
-    padding-top: 5vh;
+    padding-top: 3vh;
 }
 
 .slider-info > h1 {
@@ -370,11 +382,15 @@
 
 
 /* CONTACT */
+
+
 .contact {
     background-color: var(--color-primary);
     display: flex;
     align-items: baseline;
-    justify-content: space-around;
+    justify-content: center;
+    width: 200%;
+    margin-left: -50%;
 }
 
 .contact-column{
@@ -383,9 +399,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 30%;
+    width: 17%;
     height: 100%;
     padding: 40px;
+    margin-right: 5vw;
     z-index: 1;
 }
 
@@ -402,7 +419,8 @@
 
 .contact-text {
     color: var(--text-color-light);
-    margin: 26px 0 32px;
+    text-align: center;
+    margin: 26px 0 32px 0;
 }
 
 .button-contact {
@@ -451,11 +469,11 @@
     align-items: center;
     justify-content: space-around;
     padding: 25px;
-    margin-top: 5px;
+    margin-top: 2vh;
 }
 
 .first-column , .second-column {
-    margin-right: 50px;
+    margin-right: 5vw;
 }
 
 .contact-footer > ul > li {

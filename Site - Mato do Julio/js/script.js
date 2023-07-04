@@ -1,6 +1,5 @@
 //Function Tab 
 function tabbers(evt, Name, Class, Section) {
-  console.log(Section)
   //hidden description
   x = document.getElementsByClassName("description-"+Section);
   for (i = 0; i < x.length; i++) {
@@ -177,9 +176,6 @@ function tabbers(evt, Name, Class, Section) {
 //function toggle
 var theToggle = document.getElementById('toggle');
 
-// based on Todd Motto functions
-// https://toddmotto.com/labs/reusable-js/
-
 // hasClass
 function hasClass(elem, className) {
 	return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
@@ -241,7 +237,7 @@ $(document).ready(function(){
 
 
 //function button back-top
-/*let backTop = document.getElementsByClassName("back-top");
+let backTop = document.getElementsByClassName("back-top");
 
 window.onscroll = function() {scrollFunction()};
 
@@ -256,4 +252,4 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-}*/
+}
