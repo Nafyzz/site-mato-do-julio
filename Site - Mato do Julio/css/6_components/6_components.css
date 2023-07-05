@@ -25,7 +25,7 @@
     transition: 0.3s all linear;
     text-decoration: none;
     text-align: center;
-    text-transform: capitalize;
+    text-transform: initial;
     line-height: 40px;
     font-weight: 600;
     display: block;
@@ -39,6 +39,10 @@
 
 .submenu > li > a:active {
     background: var(--text-color-light);
+}
+
+#sobre-mato > ul {
+    width: 9.4vw;
 }
 
 /* TABBER */
@@ -301,7 +305,16 @@ button:hover .folder-name {
     font-size: large;
 }
 
+.pontos{
+    background-color: black;
+    width: 540px;
 
+}
+
+.open-modal {
+    background-color: transparent;
+    border: none;
+}
 
 /* MENU TOGGLE */
 .menu-toggle {

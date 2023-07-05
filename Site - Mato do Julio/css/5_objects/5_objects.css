@@ -31,7 +31,7 @@
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    margin-right: 10%;
+    margin-right: 5vw;
 }
 
 #brand > h1, #brand > h2  {
@@ -289,6 +289,7 @@
     width: 40vw;
     padding: 3vh 3vw 3vh 3vw;
 }
+
 
 .slider-info {
     color: var(--color-secundary);

@@ -551,11 +551,28 @@
       </div>
 
       <div class="pontos">
-        <button class="tupicuru-loc"><img src="img/" alt="">tupicuru</button>
+        <a data-toggle="modal" href="#tupicuru-modal" id="tupicuru-loc" class="modal-loc"><img src="img/loc.png" alt="tupicuru"></a>
       </div>
-
+ 
       <!--MODAL-->
-      
+      <div class="modal fade" id="tupicuru-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Título do Modal</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, quam eius aliquam corporis voluptatum, tempore at voluptatibus doloremque magnam ipsam tenetur quos. Sint ea distinctio vitae officia sed! Dicta, earum.</p>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!--CONTATO-->
       <section class="contact">
@@ -616,12 +633,13 @@
 
   <button onclick="topFunction()" class="back-top">&#8593;</button>
 
-  <!-- Optional JavaScript -->
-  <script type="text/javascript" src="js/script.js"></script>
+  
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Optional JavaScript -->
+  <script type="text/javascript" src="js/script.js"></script>
   
   </body>
 </html>

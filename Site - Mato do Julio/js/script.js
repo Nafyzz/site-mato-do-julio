@@ -214,6 +214,8 @@ theToggle.onclick = function() {
    return false;
 }
 
+
+
 //function slider
 $(document).ready(function(){
   $('.slider-for').slick({
@@ -233,8 +235,6 @@ $(document).ready(function(){
     focusOnSelect: true
   });
 });
-
-//function modal map
 
 
 //function button back-top
