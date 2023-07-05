@@ -311,9 +311,12 @@ button:hover .folder-name {
 
 }
 
-.open-modal {
-    background-color: transparent;
-    border: none;
+.modal-body {
+    display: flex;
+}
+
+.modal-body > img {
+    padding-right: 1vw;
 }
 
 /* MENU TOGGLE */
