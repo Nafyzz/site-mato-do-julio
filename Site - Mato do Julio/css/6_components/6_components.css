@@ -306,9 +306,10 @@ button:hover .folder-name {
 }
 
 .pontos{
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
     width: 540px;
-
 }
 
 .modal-body {
