@@ -203,7 +203,7 @@
         align-items: center;
         flex-direction: column;
     }
-    .map-info > h1, .map-info > h2 {
+    .map-info > h1, .map-info > h2, .map-info > p {
         display: none;
     }
 }

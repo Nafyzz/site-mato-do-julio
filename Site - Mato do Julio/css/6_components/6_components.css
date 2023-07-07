@@ -292,8 +292,29 @@ button:hover .folder-name {
     margin-top: 1vh;
 }
 
-.map-info > h2 {
+.map-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+
+.map-title > img {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    bottom: 0.5vh;
+    margin-right: 0.5vw;
+}
+
+.map-title > h1 {
+    text-transform: uppercase;
     font-size: x-large;
+    font-weight: 700;
+}
+
+.map-info > h2 {
+    font-size: larger;
+    font-weight: 500;
 }
 
 .map-info > h3 {
@@ -318,6 +339,23 @@ button:hover .folder-name {
 
 .modal-body > img {
     padding-right: 1vw;
+}
+
+.modal-header > h4 {
+    text-transform: uppercase;
+    font-size: larger;
+    margin-left: 1vw;
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+.modal-header > img {
+    width: 24px;
+    height: 24px;
+}
+
+.modal-info > h4 {
+    text-transform: uppercase;
+    font-size: larger;
 }
 
 /* MENU TOGGLE */
