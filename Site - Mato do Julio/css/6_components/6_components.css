@@ -266,7 +266,7 @@ button:hover .folder-name {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1vh 0 1vh 0;
+    margin: 1vh 0 6vh 0;
 }
 
 .int-map > h1, .mato-about > h1{
@@ -356,6 +356,62 @@ button:hover .folder-name {
 .modal-info > h4 {
     text-transform: uppercase;
     font-size: larger;
+}
+
+/* PONTOS */
+
+#aranha-loc > img {
+    position: absolute;
+    top: 3.5vh;
+    left: 21.75vw;
+}
+
+#saracura-loc {
+    position: absolute;
+    top: 5.5vh;
+    left: 22.5vw;
+}
+
+#garca-loc {
+    position: absolute;
+    top: 5.2vh;
+    left: 16vw;
+}
+
+#lagarto-loc {
+    position: absolute;
+    top: 5.5vh;
+    left: 21vw;
+}
+
+#prea-loc {
+    position: absolute;
+    top: 53.5vh;
+    left: 23.9vw;
+}
+
+#tupicuru-loc {
+    position: absolute;
+    top: 58vh;
+    left: 23.8vw;
+}
+
+#pica-pau-loc {
+    position: absolute;
+    top: 61.8vh;
+    left: 22vw;
+}
+
+#gaviao-loc {
+    position: absolute;
+    top: 64vh;
+    left: 13vw;
+}
+
+#anu-preto-loc {
+    position: absolute;
+    top: 62.5vh;
+    left: 20.5vw;
 }
 
 /* MENU TOGGLE */

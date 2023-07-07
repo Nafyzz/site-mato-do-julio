@@ -1,7 +1,58 @@
+@media screen and (max-width: 1200px) {
+    #brand {
+        margin-right: 1.5vw;
+    }
+
+    #brand > h1 {
+        display: none;
+    }
+
+    #donate {
+        display: none;
+    }
+
+    #donate-mobile {
+        display: block;
+    }
+
+    .submenu {
+        width: 9.3vw;
+    }
+
+    #sobre-mato > ul {
+        width: 12vw;
+    }
+
+    .home-img {
+        display: none;
+    }
+
+    .home-img-resized-1200 {
+        display: block;
+    }
+
+    .ajude-button {
+        width: 7vw;
+    }
+
+    .midia, .fauna-flora, .cuidados {
+        width: 28vw;
+        height: 70vh;
+    }
+
+    .camisetas, .canecas, .ajude-nos {
+        width: 25vw;
+        height: 64vh;
+        margin: 1vw;
+        border-radius: 15px;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     body {
         overflow-x: hidden;
     }
+
     .header {
         justify-content: space-between;
         margin: 0 2% 2% 2%;
@@ -10,12 +61,6 @@
     /* MENU */
     .navigation > ul {
         font-size: small;
-    }
-    #donate {
-        display: none;
-    }
-    #donate-mobile {
-        display: block;
     }
 
     /*HOME*/
@@ -83,19 +128,24 @@
     .contact {
         align-items: baseline;
     }
+
     .contact-column {
         width: 50%;
     }
+
     .contact-text {
         text-align: center;
     }
+
     .first-column {
         margin-left: 10%;
     }
+
     .first-column > h2, .second-column > h2 {
         text-transform: uppercase;
         font-size: larger;
     }
+
     .back-top {
         display: none;
     }
@@ -104,15 +154,19 @@
     .tablink, .sub-tablink {
         width: 18vw;
     }
+
     .flora {
         display: inline-block;
     }
+
     .description-main-flora > h2, .description-flora > h2 {
         font-size: larger;
     }
+
     .tab-intro {
         margin-right: 2vw;
     }
+
     .tablink {
         display: inline-flex;
         flex-flow: row wrap;
@@ -122,24 +176,30 @@
     .tab-primary-one {
         display: none;
     }
+
     .tab-primary-one-mobile {
         display: block;
     }
+
     .tab-primary-two {
         display: none;
     }
+    
     .tab-primary-two-mobile {
         display: flex;
         width: 98%;
         justify-content: flex-end;
         margin-right: 15px;
     }
+
     .tab-secundary-mamiferos, .tab-secundary-repteis, .tab-secundary-aves {
         display: none;
     }
+
     .tab-secundary-mamiferos-mobile {
         display: block;
     }
+
     .tab-secundary-repteis-mobile, .tab-secundary-aves-mobile {
         display: none;
     }
@@ -164,18 +224,23 @@
     #brand > h1 {
         display: none;
     }
+
     #brand > h2 {
         display: block;
     }
+
     .navigation {
         display: none;
     }
+
     #donate {
         display: none;
     }
+
     #donate-mobile {
         display: none;
     }
+
     .menu-toggle {
         display: block;
     }
@@ -197,12 +262,14 @@
     .gender > button {
         width: 13vw;
     }
+
     /* MAP */
     .mapa-interativo {
         display: flex;
         align-items: center;
         flex-direction: column;
     }
+
     .map-info > h1, .map-info > h2, .map-info > p {
         display: none;
     }
@@ -216,6 +283,7 @@
         top: 10vh;
         margin: 20% 0 0 25%;
     }
+
     .menu {
         width: 38vw;
         position: relative;

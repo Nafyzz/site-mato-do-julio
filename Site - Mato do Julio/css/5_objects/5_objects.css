@@ -89,6 +89,12 @@
     margin-top: 2vh;
 }
 
+.home-img-resized-1200 {
+    display: none;
+    z-index: -10;
+    margin-top: 2vh;
+}
+
 .home-media-icon {
     display: flex;
     align-items: center;
