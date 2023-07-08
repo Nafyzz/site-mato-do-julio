@@ -89,7 +89,7 @@
     margin-top: 2vh;
 }
 
-.home-img-resized-1200 {
+.home-img-resized-1200, .home-img-resized-1024, .home-img-resized-900, .home-img-resized-480 {
     display: none;
     z-index: -10;
     margin-top: 2vh;
@@ -135,6 +135,18 @@
     padding-bottom: 1vh;
 }
 
+.home-info > h4 {
+    display: none;
+    font-size: xx-large;
+    padding-bottom: 1vh;
+}
+
+.home-info > p {
+    display: none;
+    font-size: large;
+    font-weight: 500;
+}
+
 .ajude-button {
     background-color: transparent;
     color: var(--text-color-light);
@@ -158,7 +170,7 @@
 }
 
 .home-help{
-    background-color: #0000000f;
+    background-color: var(--color-secundary-shadow);
     width: 200%;
     margin-left: -50%;
 }
@@ -183,7 +195,6 @@
 }
 
 .home-action-tab, .home-help-tab {
-    /*background-color: antiquewhite;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -197,14 +208,18 @@
     font-weight: 600;
 }
 
-.home-action-tab > div > h2, .home-help-tab > div > h2 {
+.home-action-tab > div > h2, .home-help-tab > div > h2, .home-action-tab > div > h3 {
     text-align: justify;
     font-size: medium;
     font-weight: 400;
 }
 
-.home-action-tab > div > h2{
+.home-action-tab > div > h2, .home-action-tab > div > h3 {
     margin: 0 1vw 0 1vw;
+}
+
+.home-action-tab > div > h3 {
+    display: none;
 }
 
 .home-help-tab > div > h2{
@@ -493,7 +508,8 @@
     justify-content: center;
     width: 40px;
     height: 40px;
-    margin-right: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
     border-radius: 100%;
     -webkit-transition: all .2s linear;
     -o-transition: all .2s linear;

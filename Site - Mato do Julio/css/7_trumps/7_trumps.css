@@ -1,10 +1,6 @@
 @media screen and (max-width: 1200px) {
     #brand {
-        margin-right: 1.5vw;
-    }
-
-    #brand > h1 {
-        display: none;
+        margin-right: 5vw;
     }
 
     #donate {
@@ -23,16 +19,16 @@
         width: 12vw;
     }
 
+    .ajude-button {
+        width: 7vw;
+    }
+
     .home-img {
         display: none;
     }
 
     .home-img-resized-1200 {
         display: block;
-    }
-
-    .ajude-button {
-        width: 7vw;
     }
 
     .midia, .fauna-flora, .cuidados {
@@ -42,30 +38,93 @@
 
     .camisetas, .canecas, .ajude-nos {
         width: 25vw;
-        height: 64vh;
+        height: 65vh;
         margin: 1vw;
         border-radius: 15px;
     }
+
+    /* PONTOS */
+
+    #aranha-loc > img {
+        position: absolute;
+        top: 4vh;
+        left: 27.5vw;
+    }
+
+    #saracura-loc {
+        position: absolute;
+        top: 5.5vh;
+        left: 28.7vw;
+    }
+
+    #garca-loc {
+        position: absolute;
+        top: 5.2vh;
+        left: 21vw;
+    }
+
+    #lagarto-loc {
+        position: absolute;
+        top: 5.5vh;
+        left: 26.3vw;
+    }
+
+    #prea-loc {
+        position: absolute;
+        top: 60.5vh;
+        left: 30.5vw;
+    }
+
+    #tupicuru-loc {
+        position: absolute;
+        top: 67.5vh;
+        left: 30.5vw;
+    }
+
+    #pica-pau-loc {
+        position: absolute;
+        top: 70.5vh;
+        left: 28vw;
+    }
+
+    #gaviao-loc {
+        position: absolute;
+        top: 72vh;
+        left: 17vw;
+    }
+
+    #anu-preto-loc {
+        position: absolute;
+        top: 71.5vh;
+        left: 25.9vw;
+    }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
     body {
         overflow-x: hidden;
     }
 
-    .header {
-        justify-content: space-between;
-        margin: 0 2% 2% 2%;
+    /* MENU */
+    #brand {
+        margin-right: 2vw;
     }
 
-    /* MENU */
-    .navigation > ul {
-        font-size: small;
+    #brand > h1 {
+        display: none;
     }
 
     /*HOME*/
+    .home-img, .home-img-resized-1200, .home-img-resized-900, .home-img-resized-480 {
+        display: none;
+    }
+
+    .home-img-resized-1024 {
+        display: block;
+    }
+
     .home-principal {
-        height: 60vh;
+        height: 75vh;
     }
 
     .home-info {
@@ -73,8 +132,7 @@
     }
 
     .ajude-button {
-        width: 10vw;
-        height: 3vh;
+        width: 9vw;
     }
 
     .home-media-icon {
@@ -105,32 +163,89 @@
     }
 
     .home-action-tab > div > h2, .home-help-tab > div > h2 {
-        text-align: center;
         font-size: medium;
         font-weight: 400;
     }
 
     .midia, .fauna-flora, .cuidados {
-        height: 45vh;
+        width: 30vw;
+        height: 75vh;
     }
 
     .camisetas, .canecas, .ajude-nos {
-        width: 27vw;
-        height: 40vh;
+        width: 29vw;
+        height: 63vh;
     }
 
     .saiba-mais {
         width: 15vw;
-        height: 3vh;
+    }
+
+    /* PONTOS */
+
+    #aranha-loc > img {
+        position: absolute;
+        top: 4vh;
+        left: 32vw;
+    }
+
+    #saracura-loc {
+        position: absolute;
+        top: 5.5vh;
+        left: 34vw;
+    }
+
+    #garca-loc {
+        position: absolute;
+        top: 5.2vh;
+        left: 24.5vw;
+    }
+
+    #lagarto-loc {
+        position: absolute;
+        top: 5.5vh;
+        left: 30vw;
+    }
+
+    #prea-loc {
+        position: absolute;
+        top: 60.5vh;
+        left: 35.5vw;
+    }
+
+    #tupicuru-loc {
+        position: absolute;
+        top: 67.5vh;
+        left: 35.5vw;
+    }
+
+    #pica-pau-loc {
+        position: absolute;
+        top: 70.5vh;
+        left: 33vw;
+    }
+
+    #gaviao-loc {
+        position: absolute;
+        top: 72vh;
+        left: 20vw;
+    }
+
+    #anu-preto-loc {
+        position: absolute;
+        top: 71.5vh;
+        left: 30vw;
     }
 
     /*CONTACT*/
     .contact {
+        width: 150%;
+        margin-left: -22%;
         align-items: baseline;
     }
 
     .contact-column {
-        width: 50%;
+        width: 23%;
     }
 
     .contact-text {
@@ -138,7 +253,7 @@
     }
 
     .first-column {
-        margin-left: 10%;
+        margin-left: 1%;
     }
 
     .first-column > h2, .second-column > h2 {
@@ -170,7 +285,7 @@
     .tablink {
         display: inline-flex;
         flex-flow: row wrap;
-        width: 20.1vw;
+        width: 21.82vw;
     }
 
     .tab-primary-one {
@@ -221,12 +336,19 @@
 
 @media screen and (max-width: 900px) {
     /*MENU*/
+    .header {
+        justify-content: left;
+    }
+
     #brand > h1 {
         display: none;
     }
 
     #brand > h2 {
         display: block;
+        width: 20vw;
+        margin-left: 18vw;
+        font-size: x-large;
     }
 
     .navigation {
@@ -243,6 +365,62 @@
 
     .menu-toggle {
         display: block;
+    }
+
+    .home-img, .home-img-resized-1200, .home-img-resized-1024, .home-img-resized-480 {
+        display: none;
+    }
+
+    .home-img-resized-900 {
+        display: block;
+    }
+
+    .home-principal {
+        height: 57vh;
+    }
+
+    .home-info > h2 {
+        display: none;
+    }
+
+    .home-action-tab > div > h2 {
+        display: none;
+    }
+
+    .home-action-tab > div > h3 {
+        display: block;
+        margin: 0 2vw 0 2vw;
+    }
+
+    .midia, .fauna-flora, .cuidados {
+        width: 27vw;
+        height: 76vh;
+    }
+
+    .midia > img, .fauna-flora > img, .cuidados > img {
+        width: 110px;
+    }
+
+    .fauna-flora > h1 {
+        width: 20vw;
+        text-align: center;
+    }
+    .camisetas, .canecas, .ajude-nos {
+        width: 27vw;
+        height: 57vh;
+    }
+
+    .camisetas > img, .canecas > img, .ajude-nos > img {
+        width: 225px;
+        border-radius: 15px;
+    }
+
+    .saiba-mais {
+        width: 15vw;
+    }
+
+    .tablink {
+        width: 18.22vw;
     }
 
     /* PRODUTOS */
@@ -270,18 +448,82 @@
         flex-direction: column;
     }
 
-    .map-info > h1, .map-info > h2, .map-info > p {
+    .map-title, .map-info > h1, .map-info > h2, .map-info > p {
+        display: none;
+    }
+
+    /* PONTOS */
+
+    #aranha-loc > img {
+        position: absolute;
+        top: 4vh;
+        left: 35vw;
+    }
+
+    #saracura-loc {
+        position: absolute;
+        top: 5.5vh;
+        left: 37.5vw;
+    }
+
+    #garca-loc {
+        position: absolute;
+        top: 5.2vh;
+        left: 26.8vw;
+    }
+
+    #lagarto-loc {
+        position: absolute;
+        top: 5.5vh;
+        left: 32.5vw;
+    }
+
+    #prea-loc {
+        position: absolute;
+        top: 60.5vh;
+        left: 39.5vw;
+    }
+
+    #tupicuru-loc {
+        position: absolute;
+        top: 67.5vh;
+        left: 39.3vw;
+    }
+
+    #pica-pau-loc {
+        position: absolute;
+        top: 70.5vh;
+        left: 36vw;
+    }
+
+    #gaviao-loc {
+        position: absolute;
+        top: 72vh;
+        left: 23vw;
+    }
+
+    #anu-preto-loc {
+        position: absolute;
+        top: 71.5vh;
+        left: 32vw;
+    }
+
+    .para-saber-mais {
+        width: 560px;
+    }
+
+    .contact-column > h1 {
         display: none;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
     /* MENU */
     .menu-toggle {
         display: block;
         position: relative;
         top: 10vh;
-        margin: 20% 0 0 25%;
+        margin: 15% 0 0 8%;
     }
 
     .menu {
@@ -292,7 +534,6 @@
 
     /*HOME*/
     .home-action-tab, .home-help-tab {
-        /*background-color: antiquewhite;*/
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -304,13 +545,13 @@
         width: 50vw;
     }
 
-    .home-info > h3 {
-        display: none;
+    #brand > h2 {
+        width: 25vw;
+        margin-left: 21vw;
     }
 
     .ajude-button {
-        width: 20vw;
-        height: 4vh;
+        width: 15vw;
     }
 
     .home-media-icon {
@@ -322,19 +563,27 @@
     }
     
     .midia, .fauna-flora, .cuidados {
-        width: 80vw;
-        height: 45vh;
+        width: 60vw;
+        height: 50vh;
+    }
+
+    .fauna-flora > h1 {
+        width: 40vw;
     }
 
     .camisetas, .canecas, .ajude-nos {
-        width: 70vw;
-        height: 48.5vh;
+        width: 40vw;
+        height: 66vh;
         margin-top: 2vh;
+    }
+
+    .camisetas > img, .canecas > img, .ajude-nos > img {
+        width: 270px;
+        border-radius: 15px;
     }
 
     .saiba-mais {
         width: 30vw;
-        height: 2.5vh;
         margin-bottom: 1vh;
     }
 
@@ -377,5 +626,174 @@
     }
     .footer > p {
         display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu-toggle {
+        display: block;
+        position: relative;
+        top: 10vh;
+        margin: 22% 0 0 -5%;
+    }
+
+    #brand > h2 {
+        width: 40vw;
+        margin-left: 8vw;
+    }
+
+    .home-img, .home-img-resized-1200, .home-img-resized-1024, .home-img-resized-900 {
+        display: none;
+    }
+
+    .home-img-resized-480 {
+        display: block;
+    }
+
+    .home-principal {
+        width: 80vw;
+        height: 85vh;
+    }
+
+    .media-divider {
+        height: 30vh;
+        margin: 0 3vw 0 4vw;
+    }
+
+    .home-media-icon {
+        margin-left: 1vw;
+    }
+
+    .home-social-icons {
+        margin-bottom: 0;
+    }
+
+    .home-info {
+        width: 54vw;
+    }
+
+    .home-info > h1 {
+        display: none;
+    }
+
+    .home-info > h3 {
+        display: none;
+    }
+
+    .home-info > h4 {
+        display: block;
+    }
+
+    .home-info > p {
+        display: block;
+    }
+
+    .ajude-button {
+        width: 17vw;
+    }
+
+    .midia, .fauna-flora, .cuidados {
+        width: 70vw;
+        height: 63vh;
+        margin-bottom: 2vh;
+    }
+
+    .fauna-flora > h1 {
+        width: 60vw;
+    }
+
+    .camisetas, .canecas, .ajude-nos {
+        width: 63vw;
+        height: 66vh;
+        margin-top: 2vh;
+    }
+
+    .home-action-tab > div > h3 {
+        display: none;
+    }
+
+    .home-action-tab > div > h2 {
+        display: block;
+        margin: 0 3vw 0 3vw;
+    }
+
+    .tablink {
+        width: 21.8vw;
+    }
+
+    .sub-tablink {
+        width: 44.5vw;
+    }
+
+    .para-saber-mais {
+        width: 460px;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .map-mobile {
+        display: block;
+    }
+
+    /* PONTOS */
+
+    #aranha-loc > img {
+        position: absolute;
+        top: 3vh;
+        left: 74vw;
+    }
+
+    #saracura-loc {
+        position: absolute;
+        top: 5.5vh;
+        left: 78vw;
+    }
+
+    #garca-loc {
+        position: absolute;
+        top: 5.2vh;
+        left: 58vw;
+    }
+
+    #lagarto-loc {
+        position: absolute;
+        top: 5.5vh;
+        left: 70vw;
+    }
+
+    #prea-loc {
+        position: absolute;
+        top: 60.5vh;
+        left: 82vw;
+    }
+
+    #tupicuru-loc {
+        position: absolute;
+        top: 67.5vh;
+        left: 82vw;
+    }
+
+    #pica-pau-loc {
+        position: absolute;
+        top: 70.5vh;
+        left: 75vw;
+    }
+
+    #gaviao-loc {
+        position: absolute;
+        top: 72vh;
+        left: 48vw;
+    }
+
+    #anu-preto-loc {
+        position: absolute;
+        top: 71.5vh;
+        left: 68vw;
+    }
+
+    .footer {
+        margin-top: -5vh;
     }
 }

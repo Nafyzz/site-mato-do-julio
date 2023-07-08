@@ -286,6 +286,10 @@ button:hover .folder-name {
     margin-right: 2vw;
 }
 
+.map-mobile {
+    display: none;
+}
+
 .map-info {
     display: flex;
     flex-direction: column;
@@ -418,8 +422,8 @@ button:hover .folder-name {
 .menu-toggle {
     display: none;
     position: relative;
-    top: 7vh;
-    margin: 20% 0 0 50.9%;
+    top: 8vh;
+    margin: 20% 0 0 14.9%;
 }
 
 #toggle {
