@@ -119,7 +119,7 @@ button:hover .transition {
     width: 100%;
 }
   
-  .main-tablink{
+.main-tablink {
     background: var(--color-secundary-shadow);
     color: var(--text-color-dark);
     display: block;
@@ -135,10 +135,9 @@ button:hover .transition {
     overflow: hidden;
     text-transform: uppercase;
     transition: all .35s;
-  }
-  
-  .main-tablink:before,
-  .main-tablink:after{
+}
+
+.main-tablink:before, .main-tablink:after {
     position: absolute;
     content: "";
     width: 100%;
@@ -148,20 +147,20 @@ button:hover .transition {
     background: var(--color-secundary);
     z-index: -1;
     transition: all .35s;
-  }
-  
-  .main-tablink:before{
+}
+
+.main-tablink:before {
     opacity: .5;
-  }
-  
-  .main-tablink:after{
+}
+
+.main-tablink:after {
     transition-delay: .2s;
-  }
-  
-  .main-tablink:hover:before,
-  .main-tablink:hover:after{
-    top: 0;
-  }
+}
+
+.main-tablink:hover:before,
+.main-tablink:hover:after{
+top: 0;
+}
 
 .folder-name {
     color: var(--text-color-dark);
@@ -183,12 +182,13 @@ button:hover .folder-name {
     display: none;
 }
 
-.tab-primary-two{
+.tab-primary-two {
     display: flex;
     width: 99%;
     justify-content: flex-end;
     margin-right: 15px;
 }
+
 .tab-primary-two-mobile {
     display: none;
 }
@@ -242,7 +242,6 @@ button:hover .folder-name {
     line-height: 25px;
     padding: 20px 20px 10px;
     margin-right: 1vw;
-
 }
 
 .description-main > h2, .description > h2, .sub-description > h2 {
@@ -269,7 +268,7 @@ button:hover .folder-name {
     margin: 1vh 0 6vh 0;
 }
 
-.int-map > h1, .mato-about > h1{
+.int-map > h1, .mato-about > h1 {
     font-size: xx-large;
     font-weight: 700;
     text-transform: uppercase;
@@ -330,7 +329,7 @@ button:hover .folder-name {
     font-size: large;
 }
 
-.pontos{
+.pontos {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -352,6 +351,7 @@ button:hover .folder-name {
     margin-bottom: 0;
     margin-top: 2px;
 }
+
 .modal-header > img {
     width: 24px;
     height: 24px;
@@ -363,7 +363,6 @@ button:hover .folder-name {
 }
 
 /* PONTOS */
-
 #aranha-loc > img {
     position: absolute;
     top: 3.5vh;
@@ -515,7 +514,6 @@ button:hover .folder-name {
 }
 
 /* BACK TO TOP */
-
 .back-top {
     background-color: var(--color-secundary);
     color: var(--text-color-light);

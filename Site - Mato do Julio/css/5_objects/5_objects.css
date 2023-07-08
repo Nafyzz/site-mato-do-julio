@@ -34,7 +34,7 @@
     margin-right: 5vw;
 }
 
-#brand > h1, #brand > h2  {
+#brand > h1, #brand > h2 {
     color: var(--color-primary);
     position: relative;
     top: 6px;
@@ -157,7 +157,7 @@
     font-weight: 700;
 }
 
-.ajude-button:hover{
+.ajude-button:hover {
     background-color: var(--text-color-light);
     color: var(--color-secundary);
 }
@@ -169,7 +169,7 @@
     margin: 1vh 0 1vh 0;
 }
 
-.home-help{
+.home-help {
     background-color: var(--color-secundary-shadow);
     width: 200%;
     margin-left: -50%;
@@ -222,7 +222,7 @@
     display: none;
 }
 
-.home-help-tab > div > h2{
+.home-help-tab > div > h2 {
     margin: 0 1vw 2vh 1vw;
 }
 
@@ -272,6 +272,7 @@
 .gender, .modelo{
     margin-left: 3vw;
 }
+
 .gender > button {
     background-color: var(--text-color-light);
     color: var(--color-secundary);
@@ -361,7 +362,7 @@
     font-weight: 600;
 }
 
-.size > button:hover{
+.size > button:hover {
     background-color: var(--color-details);
     color: var(--color-secundary);
 }
@@ -417,7 +418,7 @@
     margin-left: -50%;
 }
 
-.contact-column{
+.contact-column {
     background-color: var(--color-secundary);
     display: flex;
     align-items: center;
@@ -488,7 +489,6 @@
 
 /* FOOTER */
 .footer {
-    background-color: var(--);
     display: flex;
     align-items: center;
     justify-content: space-around;

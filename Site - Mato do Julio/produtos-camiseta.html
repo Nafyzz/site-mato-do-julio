@@ -2,13 +2,12 @@
 <html lang="pt-br">
   <head>
     <title>Mato do Júlio</title>
+    <link rel = "icon" href = "img/mato logo2.png" type = "image/x-icon">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
@@ -17,7 +16,6 @@
     <section class="container">
       <!--MENU-->
       <header class="header">
-
         <div href="#" id="brand">
           <img src="img/mato logo2.png" alt="Logo Mato do Julio">
           <h1>Mato <br> do Júlio</h1>
@@ -28,24 +26,28 @@
           <ul>
             <li><a href="#">Quem somos</a></li>
             <li><a href="#">O que fazemos</a></li>
-            <li><a href="sobre-o-mato.html" rel="next">Sobre o Mato</a></li>
 
-            <li class="with-submenu"><a href="produtos.html">Produtos <span class="sub-arrow"><img src="img/sub-arrow-16px.png" alt="down arrow"></span></a>
+            <li class="with-submenu" id="sobre-mato"><a href="#">Sobre o Mato <span class="sub-arrow"><img src="img/sub-arrow-16px.png" alt="down arrow"></span></a>
+              <ul class="submenu">
+                <li><a href="sobre-o-mato.html" rel="next">Fauna e Flora</a></li>
+                <li><a href="casa-dos-baptista.html" rel="next">Casa Baptista</a></li>
+              </ul></a></li>
+
+            <li class="with-submenu"><a href="#">Produtos <span class="sub-arrow"><img src="img/sub-arrow-16px.png" alt="down arrow"></span></a>
               <ul class="submenu">
                 <li><a href="produtos-camiseta.html" rel="next">Camiseta</a></li>
                 <li><a href="produtos-caneca.html" rel="next">Caneca</a></li>
               </ul></a></li>
-            
 
-              <li class="with-submenu"><a href="#"> Contato <span class="sub-arrow"><img src="img/sub-arrow-16px.png" alt="down arrow"></span></a>
-                <ul class="submenu">
-                  <li><a href="https://www.instagram.com/matodojulio/" target="_blank" rel="next">Instagram</a></li>
-                  <li><a href="https://www.tiktok.com/@matodojulio_?_t=8a7WV5IwKog&_r=1" target="_blank" rel="next">Tiktok</a></li>
-                  <li><a href="https://www.facebook.com/matodojulio?mibextid=LQQJ4d" target="_blank" rel="next">Facebook</a></li>
-                  <li><a href="https://api.whatsapp.com/send?phone=5551986095637" target="_blank" rel="next">Whatsapp</a></li>
-                </ul></a></li>
-            </ul> 
-          </nav>
+            <li class="with-submenu"><a href="#"> Contatos <span class="sub-arrow"><img src="img/sub-arrow-16px.png" alt="down arrow"></span></a>
+              <ul class="submenu">
+                <li><a href="https://www.instagram.com/matodojulio/" rel="noopener" target="_blank" rel="next">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@matodojulio_?_t=8a7WV5IwKog&_r=1" rel="noopener" target="_blank" rel="next">Tiktok</a></li>
+                <li><a href="https://www.facebook.com/matodojulio?mibextid=LQQJ4d" rel="noopener" target="_blank" rel="next">Facebook</a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=5551986095637" rel="noopener" target="_blank" rel="next">Whatsapp</a></li>
+              </ul></a></li>
+          </ul> 
+        </nav>
 
         <button class="button" id="donate" onClick="location.href='https://apoia.se/coletivomatodojulio'">DOE AGORA</button>
         <button class="button" id="donate-mobile" onClick="location.href='https://apoia.se/coletivomatodojulio'">DOE</button>
@@ -57,8 +59,9 @@
               <li><a href="#">Quem somos</a></li>
               <li><a href="#">O que fazemos</a></li>
               <li><a href="sobre-o-mato.html" rel="next">Sobre o Mato</a></li>
-              <li><a href="produtos.html">Produtos</a></li>
-              <li><a href="#">Contato</a></li>
+              <li><a href="casa-dos-baptista.html">Casa Baptista</a></li>
+              <li><a href="produtos-camiseta.html">Camisetas</a></li>
+              <li><a href="produtos-caneca.html">Canecas</a></li>
             </ul>
           </div>
         </div>
@@ -146,62 +149,63 @@
         </div>
       </div>
 
+     
       <!--CONTATO-->
-        <section class="contact">
-          <div class="contact-column">
-            <a class="contact-logo">
-              <img src="img/mato logo2.png" alt="Logo Mato">
-            </a>
-            <p class="contact-text">
-              Somos um coletivo de pessoas que luta pela preservação da fauna e flora da floresta Mato do Júlio , em Cachoeirinha, Rio Grande do Sul.
-            </p>
-            <h1>Ajude a causa</h1>
-            <button class="button-contact">doe</button>
-          </div>
+      <section class="contact">
+        <div class="contact-column">
+          <a class="contact-logo">
+            <img src="img/mato logo2.png" alt="Logo Mato">
+          </a>
+          <p class="contact-text">
+            Somos um coletivo de pessoas que luta pela preservação da fauna e flora da floresta Mato do Júlio, em Cachoeirinha, Rio Grande do Sul.
+          </p>
+          <h1>Ajude a causa</h1>
+          <button class="button-contact">doe</button>
+        </div>
 
-          <div class="first-column">
-            <h2>Quem somos</h2>
-            <ul class="sub-contact">
-              <li><a href="#"><img src="img/right-arrow-bold.png" alt=""> Sobre o Mato</a></li>
-              <li><a href="#"><img src="img/right-arrow-bold.png" alt=""> Trabalhe conosco</a></li>
-            </ul>
+        <div class="first-column">
+          <h2>Quem somos</h2>
+          <ul class="sub-contact">
+            <li><a href="#"><img src="img/right-arrow-bold.png" alt="Sobre o Coletivo"> Sobre o Coletivo</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=5551986095637"><img src="img/right-arrow-bold.png" alt="Trabalhe conosco"> Trabalhe conosco</a></li>
+          </ul>
 
-            <h2>Nossas ações</h2>
-            <ul class="sub-contact">
-              <li><a href="#"><img src="img/right-arrow-bold.png" alt=""> Presença na mídia</a></li>
-              <li><a href="#"><img src="img/right-arrow-bold.png" alt=""> Catalogação da fauna e flora</a></li>
-              <li><a href="#"><img src="img/right-arrow-bold.png" alt=""> Cuidados com o Mato</a></li>
-            </ul>
-          </div>
+          <h2>Nossos produtos</h2>
+          <ul class="sub-contact">
+            <li><a href="produtos-camiseta.html"><img src="img/right-arrow-bold.png" alt=""> Camisetas "Salve o Mato"</a></li>
+            <li><a href="produtos-caneca.html"><img src="img/right-arrow-bold.png" alt="Canecas com logo exclusiva"> Canecas com logo exclusiva</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=5551986095637"><img src="img/right-arrow-bold.png" alt="Saiba mais sobre os produtos"> Saiba mais sobre os produtos</a></li>
+          </ul>
+        </div>
 
-          <div class="second-column">
-            <h2>Nossos Parceiros</h2>
-            <ul class="sub-contact">
-              <li><a href="#"><img src="img/right-arrow-bold.png" alt=""> Adicionar</a></li>
-              <li><a href="#"><img src="img/right-arrow-bold.png" alt=""> Adicionar</a></li>
-              <li><a href="#"><img src="img/right-arrow-bold.png" alt=""> Adicionar</a></li>
-              <li><a href="#"><img src="img/right-arrow-bold.png" alt=""> Adicionar</a></li>
-            </ul>
-          </div>
-        
-        </section>
+        <div class="second-column">
+          <h2> Contatos importantes </h2>
+          <ul class="sub-contact">
+            <li><a href="https://www.instagram.com/apn.vg/"><img src="img/right-arrow-bold.png" alt=""> Associação de Preservação da Natureza</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=5551985931288"><img src="img/right-arrow-bold.png" alt="Resgate de Fauna Silvestre"> Resgate de Fauna Silvestre</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=5551932897517"><img src="img/right-arrow-bold.png" alt="Equipe de Fauna POA"> Equipe de Fauna POA</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=5551933417664"><img src="img/right-arrow-bold.png" alt="Toca dos Bichos"> Toca dos Bichos</a></li>
+            <li><a href="https://www.flaticon.com/br/" title="ícones"><br> Ícones criados por Flaticon</a></li>
+          </ul>
+        </div>
+      </section>
+
 
       <!--FOOTER-->
-      
       <div class="footer">
         <p> © 2023, Coletivo Mato do Júlio. </p>
-      
         <div class="contact-footer">
           <ul class="social-icons">
-            <li><a class="whatsapp" href="https://api.whatsapp.com/send?phone=5551986095637" target="_blank"><img src="img/whatsapp.png" alt=""></a></li>
-            <li><a class="instagram" href="https://www.instagram.com/matodojulio/" target="_blank"><img src="img/instagram.png" alt=""></a></li>
-            <li><a class="facebook" href="https://www.facebook.com/matodojulio?mibextid=LQQJ4d" target="_blank"><img src="img/facebook.png" alt=""></a></li>
-            <li><a class="tiktok" href="https://www.tiktok.com/@matodojulio_?_t=8a7WV5IwKog&_r=1" target="_blank"><img src="img/tiktok.png" alt=""></a></li>
+            <li><a class="whatsapp" href="https://api.whatsapp.com/send?phone=5551986095637" rel="noopener" target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a></li>
+            <li><a class="instagram" href="https://www.instagram.com/matodojulio/" rel="noopener" target="_blank"><img src="img/instagram.png" alt="instagram"></a></li>
+            <li><a class="facebook" href="https://www.facebook.com/matodojulio?mibextid=LQQJ4d" rel="noopener" target="_blank"><img src="img/facebook.png" alt="facebook"></a></li>
+            <li><a class="tiktok" href="https://www.tiktok.com/@matodojulio_?_t=8a7WV5IwKog&_r=1" rel="noopener" target="_blank"><img src="img/tiktok.png" alt="tiktok"></a></li>
           </ul>
         </div>
       </div>
       
-    </section> <!--Container-->
+    </section> <!--CONTAINER-->
+
 
     <button onclick="topFunction()" class="back-top">&#8593;</button>
 

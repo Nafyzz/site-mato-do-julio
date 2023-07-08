@@ -3,14 +3,20 @@
         display: none;
     }
 
-    .home-img{
+    .home-img {
         display: block;
     }
 
     .slider-info-mobile {
         display: none;
     }
+
+    .first-column > h2, .second-column > h2 {
+        text-transform: uppercase;
+        font-size: x-large;
+    }
 }
+
 @media screen and (max-width: 1200px) {
     #brand {
         margin-right: 5vw;
@@ -172,7 +178,7 @@
         margin: 0 1vw 0 2vw;
     }
 
-    .home-action > h1, .home-help > h1  {
+    .home-action > h1, .home-help > h1 {
         font-size: x-large;
         font-weight: 700;
         text-transform: uppercase;
@@ -421,7 +427,7 @@
         display: block;
     }
 
-    .home-img, .home-img-resized-1200, .home-img-resized-1024, .home-img-resized-480, .home-img-resized-425, .home-img-resized-375  {
+    .home-img, .home-img-resized-1200, .home-img-resized-1024, .home-img-resized-480, .home-img-resized-425, .home-img-resized-375 {
         display: none;
     }
 
@@ -459,6 +465,7 @@
         width: 20vw;
         text-align: center;
     }
+
     .camisetas, .canecas, .ajude-nos {
         width: 27vw;
         height: 57vh;
@@ -691,23 +698,28 @@
     .tab-title {
         font-size: x-large;
     }
+
     .tab-intro {
         font-size: medium;
         margin-right: 2vw;
     }
+
     .flora, .fauna {
         display: inline-block;
     }
+
     .tablink {
         display: inline-flex;
         flex-flow: row wrap;
         width: 21.35vw;
     }
+
     .sub-tablink {
         display: inline-flex;
         flex-flow: row wrap;
         width: 43.5vw;
     }
+
     .main-tablink {
         width: 35%;
     }
@@ -716,6 +728,7 @@
     .contact{
         display: none;
     }
+
     .footer > p {
         display: none;
     }
@@ -734,7 +747,7 @@
         margin-left: 10vw;
     }
 
-    .home-img, .home-img-resized-1200, .home-img-resized-1024, .home-img-resized-900, .home-img-resized-425, .home-img-resized-375  {
+    .home-img, .home-img-resized-1200, .home-img-resized-1024, .home-img-resized-900, .home-img-resized-425, .home-img-resized-375 {
         display: none;
     }
 
@@ -811,7 +824,6 @@
 
 
     /* PRODUTOS */
-
     .slider-produtos {
         display: none;
     }
@@ -859,7 +871,6 @@
     }
 
     /* TABBER */
-
     .tablink {
         width: 21.8vw;
     }
@@ -885,7 +896,6 @@
     }
     
     /* PONTOS */
-
     #aranha-loc > img {
         position: absolute;
         top: 3vh;
@@ -946,7 +956,7 @@
 }
 
 @media screen and (max-width: 426px) {
-    .home-img, .home-img-resized-1200, .home-img-resized-1024, .home-img-resized-900, .home-img-resized-480, .home-img-resized-375   {
+    .home-img, .home-img-resized-1200, .home-img-resized-1024, .home-img-resized-900, .home-img-resized-480, .home-img-resized-375 {
         display: none;
     }
 
@@ -991,7 +1001,6 @@
     }
 
      /* TABBER */
-
      .tablink {
         width: 21.5vw;
     }
@@ -1060,7 +1069,7 @@
 }
 
 @media screen and (max-width: 376px) {
-    .home-img, .home-img-resized-1200, .home-img-resized-1024, .home-img-resized-900, .home-img-resized-480, .home-img-resized-425  {
+    .home-img, .home-img-resized-1200, .home-img-resized-1024, .home-img-resized-900, .home-img-resized-480, .home-img-resized-425 {
         display: none;
     }
 
@@ -1106,7 +1115,6 @@
     }
 
      /* TABBER */
-
      .tablink {
         width: 21vw;
     }
