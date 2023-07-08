@@ -43,6 +43,12 @@
         border-radius: 15px;
     }
 
+    /* PRODUTOS */
+
+    .slider-produtos {
+        width: 50vw;
+    }
+
     /* PONTOS */
 
     #aranha-loc > img {
@@ -179,6 +185,29 @@
 
     .saiba-mais {
         width: 15vw;
+    }
+
+    /* PRODUTOS */
+
+    .slider-produtos {
+        width: 55vw;
+    }
+
+    .size > button {
+        width: 5vw;
+    }
+
+    .buy > button > a {
+        width: 19vw;
+        height: 6vh;
+    }
+
+    .buy > button > a > img {
+        margin-left: 1vw;
+    }
+
+    .gender > button {
+        width: 10vw;
     }
 
     /* PONTOS */
@@ -427,10 +456,15 @@
     .slider-produtos {
         width: 70vw;
     }
+    
+    .slider-container {
+        display: flex;
+        flex-direction: column;
+    }
 
     .buy > button > a {
-        width: 25vw;
-        height: 4vh;
+        width: 20vw;
+        height: 6vh;
     }
 
     .size >  button {
@@ -595,6 +629,15 @@
         display: none;
     }
 
+    .buy > button > a {
+        width: 25vw;
+        height: 6vh;
+    }
+
+    .buy > button > a > img {
+        margin-left: 1vw;
+    }
+
     /*TABBER*/
     .tab-title {
         font-size: x-large;
@@ -634,12 +677,12 @@
         display: block;
         position: relative;
         top: 10vh;
-        margin: 22% 0 0 -5%;
+        margin: 22% 0 0 -2%;
     }
 
     #brand > h2 {
         width: 40vw;
-        margin-left: 8vw;
+        margin-left: 10vw;
     }
 
     .home-img, .home-img-resized-1200, .home-img-resized-1024, .home-img-resized-900 {
@@ -716,6 +759,36 @@
         display: block;
         margin: 0 3vw 0 3vw;
     }
+
+    /* PRODUTOS */
+
+    .slider-produtos {
+        width: 95vw;
+    }
+
+    .slider-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gender > button{
+        width: 20vw;
+    }
+
+    .buy > button > a {
+        width: 38vw;
+        height: 6vh;
+    }
+
+    .buy > button > a > img {
+        margin-left: 2vw;
+    }
+
+    .size > button {
+        width: 8vw;
+    }
+
+    /* TABBER */
 
     .tablink {
         width: 21.8vw;
