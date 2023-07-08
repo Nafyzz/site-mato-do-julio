@@ -227,6 +227,7 @@ $(document).ready(function(){
     fade: true,
     asNavFor: '.slider-nav'
   });
+
   $('.slider-nav').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -236,6 +237,9 @@ $(document).ready(function(){
     centerMode: true,
     focusOnSelect: true
   });
+});
+
+$(document).ready(function(){
   $('.slider-for-mobile').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -245,6 +249,7 @@ $(document).ready(function(){
     fade: true,
     asNavFor: '.slider-nav-mobile'
   });
+
   $('.slider-nav-mobile').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -255,7 +260,6 @@ $(document).ready(function(){
     focusOnSelect: true
   });
 });
-
 
 //function button back-top
 let backTop = document.getElementsByClassName("back-top");
