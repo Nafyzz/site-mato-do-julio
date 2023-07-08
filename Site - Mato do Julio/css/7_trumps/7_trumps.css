@@ -6,6 +6,10 @@
     .home-img{
         display: block;
     }
+
+    .slider-info-mobile {
+        display: none;
+    }
 }
 @media screen and (max-width: 1200px) {
     #brand {
@@ -59,7 +63,13 @@
     /* PRODUTOS */
 
     .slider-produtos {
-        width: 50vw;
+        width: 55vw;
+        height: 85vh;
+        padding: 3vh 3vw 3vh 3vw;
+    }
+
+    .slider-info-mobile {
+        display: none;
     }
 
     /* PONTOS */
@@ -203,7 +213,9 @@
     /* PRODUTOS */
 
     .slider-produtos {
-        width: 55vw;
+        width: 65vw;
+        height: 85vh;
+        padding: 3vh 3vw 3vh 3vw;
     }
 
     .size > button {
@@ -467,7 +479,22 @@
 
     /* PRODUTOS */
     .slider-produtos {
-        width: 70vw;
+        margin-left: 1.5vw;
+        padding: 3vh 3vw 3vh 3vw;
+    }
+
+    .slider-info {
+        display: none;
+    }
+
+    .description-product > h2 {
+        margin-top: 0;
+    }
+
+    .slider-info-mobile {
+        display: block;
+        margin-left: 5vw;
+        margin-bottom: 5vh;
     }
     
     .slider-container {
@@ -786,7 +813,18 @@
     /* PRODUTOS */
 
     .slider-produtos {
-        width: 95vw;
+        display: none;
+    }
+
+    .slider-produtos-mobile {
+        display: flex;
+        height: 50vh;
+        margin-left: 2vw;
+        padding: 3vh 3vw 3vh 3vw;
+    }
+
+    .slider-info {
+        width: 75vw;
     }
 
     .slider-container {
@@ -809,6 +847,15 @@
 
     .size > button {
         width: 8vw;
+    }
+
+    .slick-prev {
+        top: 154px !important;
+    }
+
+    .slick-next {
+        top: 154px !important;
+        left: 270px !important;
     }
 
     /* TABBER */

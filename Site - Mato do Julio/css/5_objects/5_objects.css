@@ -306,18 +306,23 @@
     display: flex;
 }
 
-.slider-produtos {
-    width: 40vw;
+.slider-produtos, .slider-produtos-mobile {
+    display: flex;
+    width: 44vw;
+    height: 80vh;
     padding: 3vh 3vw 3vh 3vw;
 }
 
+.slider-produtos-mobile {
+    display: none;
+}
 
-.slider-info {
+.slider-info, .slider-info-mobile {
     color: var(--color-secundary);
     padding-top: 3vh;
 }
 
-.slider-info > h1 {
+.slider-info > h1, .slider-info-mobile > h1 {
     font-size: xx-large;
 }
 
@@ -519,24 +524,4 @@
 .contact-footer ul > li > a > img {
     width: 25px;
     height: 25px;
-}
-
-.contact-footer ul > li > a.whatsapp:hover {
-    background-color: var(--color-secundary);
-    border: 2px solid var(--color-secundary);
-}
-
-.contact-footer > ul > li > a.instagram:hover {
-    background-color: var(--color-secundary);
-    border: 2px solid var(--color-secundary);
-}
-
-.contact-footer > ul > li > a.facebook:hover {
-    background-color: var(--color-secundary);
-    border: 2px solid var(--color-secundary);
-}
-
-.contact-footer > ul > li > a.tiktok:hover {
-    background-color: var(--color-secundary);
-    border: 2px solid var(--color-secundary);
 }

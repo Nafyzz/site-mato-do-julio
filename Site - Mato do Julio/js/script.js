@@ -222,6 +222,7 @@ $(document).ready(function(){
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
+    infinite: true,
     dots: true,
     fade: true,
     asNavFor: '.slider-nav'
@@ -231,6 +232,25 @@ $(document).ready(function(){
     slidesToScroll: 1,
     arrows: false,
     asNavFor: '.slider-for',
+    vertical: true,
+    centerMode: true,
+    focusOnSelect: true
+  });
+  $('.slider-for-mobile').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    infinite: true,
+    dots: true,
+    fade: true,
+    asNavFor: '.slider-nav-mobile'
+  });
+  $('.slider-nav-mobile').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false,
+    asNavFor: '.slider-for-mobile',
+    vertical: true,
     centerMode: true,
     focusOnSelect: true
   });
