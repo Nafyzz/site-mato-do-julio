@@ -49,7 +49,6 @@
 .tabber {
     display: flex;
     flex-flow: row wrap;
-    margin-top: 1vw;
 }
 
 .tabber-flora, .tabber-fauna {
@@ -261,11 +260,18 @@ button:hover .folder-name {
 }
 
 /* INTERACTIVE MAP */
-.int-map, .mato-about {
+.int-map {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 1vh 0 6vh 0;
+}
+
+.mato-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vh 2vw 0 2vw;
 }
 
 .int-map > h1, .mato-about > h1 {
@@ -273,6 +279,11 @@ button:hover .folder-name {
     font-weight: 700;
     text-transform: uppercase;
     margin: 2vh 0 1vh 0;
+}
+
+.mato-about > div > p {
+    font-size: 1.1rem;
+    text-align: justify;
 }
 
 .mapa-interativo {

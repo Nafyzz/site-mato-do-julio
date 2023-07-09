@@ -162,7 +162,7 @@
     color: var(--color-secundary);
 }
 
-.home-how, .home-action, .home-help {
+.home-how, .home-action, .home-help, .home-how-mobile {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -175,7 +175,7 @@
     margin-left: -50%;
 }
 
-.home-action > h1, .home-help > h1, .home-how > h1 {
+.home-action > h1, .home-help > h1, .home-how > h1, .home-how-mobile > h1 {
     font-size: xx-large;
     font-weight: 700;
     text-transform: uppercase;
@@ -187,7 +187,7 @@
     color: transparent;
     width: 10vw;
     height: 2px;
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
 }
 
 .home-help > h2 {
@@ -236,6 +236,73 @@
     font-weight: 500;
 }
 
+/* QUEM SOMOS*/ 
+.quem-somos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3vh 0 4vh 0;
+}
+
+.quem-somos > img {
+    border-radius: 5px;
+    height: 530px;
+    margin: 3vh 6vh 3vh 3vh;
+}
+
+.home-how-mobile{
+    display: none;
+}
+
+.coletivo-mato-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 47%;
+    margin: 0 2vw 0 1vw;
+}
+
+
+.home-quem {
+    margin-top: 4vh;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.coletivo-mato-info > p {
+    text-align: justify;
+    font-size: 1.2rem;
+    margin: 0 0 4vh 0;
+}
+
+.coletivo-mato-info > button {
+    background-color: transparent;
+    border: none;
+    width: 25vh;
+    height: 6vh;
+    border-radius: 30px;
+    margin-left: -0.5vw;
+}
+
+.coletivo-mato-info > button > a {
+    background-color: var(--color-secundary);
+    color: var(--text-color-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22vh;
+    height: 6vh;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+.coletivo-mato-info > button > a > img {
+    margin-left: 0.5vw;
+}
+/* HOME INFO */ 
 .midia, .fauna-flora, .cuidados {
     background-color: #64646f08;
     display: flex;
@@ -284,7 +351,7 @@
 }
 
 .gender > button:hover {
-    background-color: var(--color-details);
+    background-color: var(--color-secundary-shadow);
     color: var(--color-secundary);
 }
 
@@ -299,7 +366,7 @@
 }
 
 .modelo > button:hover {
-    background-color: var(--color-details);
+    background-color: var(--color-secundary-shadow);
     color: var(--color-secundary);
 }
 
@@ -363,7 +430,7 @@
 }
 
 .size > button:hover {
-    background-color: var(--color-details);
+    background-color: var(--color-secundary-shadow);
     color: var(--color-secundary);
 }
 
@@ -404,10 +471,12 @@
 
 .description-product > p {
     color: var(--text-color-dark);
-    font-size: small;
+    font-size: 14.5px;
 }
 
-
+.slick-slider {
+    width: 510px !important;
+}
 /* CONTACT */
 .contact {
     background-color: var(--color-primary);
