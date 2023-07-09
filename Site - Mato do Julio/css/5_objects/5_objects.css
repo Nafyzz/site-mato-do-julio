@@ -262,6 +262,29 @@
     margin: 0 2vw 0 1vw;
 }
 
+/* O QUE FAZEMOS */
+
+.make {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.make-info > h1 {
+    font-size: 1.2rem;
+}
+
+.politica, .palestras, .participa, .resgate, .divulga, .cataloga, .plantacao, .alimento, .pesquisa {
+    display: flex;
+    align-items: center;
+    margin-right: 1vw;
+}
+
+.politica > img, .palestras > img, .participa > img, .resgate > img, .divulga > img, .cataloga > img, .plantacao > img, .alimento > img, .pesquisa > img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1vw;
+}
 
 .home-quem {
     margin-top: 4vh;
