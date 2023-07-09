@@ -263,11 +263,18 @@
 }
 
 /* O QUE FAZEMOS */
+.make {
+    margin: 2vh 0 5vh 0;
+}
 
-.make-column1, .make-column2, .make-column3  {
+.make-column1, .make-column2, .make-column3, .make-column4   {
     display: flex;
     align-items: baseline;
     justify-content: space-around;
+}
+
+.make-mobile{
+    display: none;
 }
 
 .make-info > h1 {
@@ -277,8 +284,8 @@
 .politica, .palestras, .participa, .resgate, .divulga, .cataloga, .plantacao, .alimento, .pesquisa {
     display: flex;
     align-items: center;
-    margin: 0.5vh 0.5vw 0.5vh 0.5vw;
-    width: 33%;
+    margin: 1vh 0.7vw 1vh 0.7vw;
+    width: 34%;
 }
 
 .politica > img, .palestras > img, .participa > img, .resgate > img, .divulga > img, .cataloga > img, .plantacao > img, .alimento > img, .pesquisa > img {

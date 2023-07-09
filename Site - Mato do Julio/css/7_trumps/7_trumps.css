@@ -491,6 +491,14 @@
         width: 15vw;
     }
 
+    .politica, .palestras, .participa, .resgate, .divulga, .cataloga, .plantacao, .alimento, .pesquisa {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 1vh 0.8vw 1vh 0.8vw;
+        width: 40%;
+    }
+
     .tablink {
         width: 18.22vw;
     }
@@ -740,6 +748,7 @@
         font-size: medium;
         text-align: justify;
     }
+    
     /*TABBER*/
     .tab-title {
         font-size: x-large;
@@ -771,7 +780,7 @@
     }
 
     /* PAGE */
-    .contact{
+    .contact {
         display: none;
     }
 
@@ -871,6 +880,16 @@
     .coletivo-mato-info {
         width: 85%;
     }
+
+    .make {
+        display: none;
+    }
+
+    .make-mobile{
+        display: block;
+        margin: 3vh 0 5vh 0;
+    }
+
     /* PRODUTOS */
     .slider-produtos {
         display: none;
@@ -892,7 +911,7 @@
         flex-direction: column;
     }
 
-    .gender > button{
+    .gender > button {
         width: 20vw;
     }
 
@@ -1121,6 +1140,13 @@
 }
 
 @media screen and (max-width: 376px) {
+    .menu-toggle {
+        display: block;
+        position: relative;
+        top: 10vh;
+        margin: 32% 0 0 -15%;
+    }
+
     .home-img, .home-img-resized-1200, .home-img-resized-1024, .home-img-resized-900, .home-img-resized-480, .home-img-resized-425 {
         display: none;
     }
