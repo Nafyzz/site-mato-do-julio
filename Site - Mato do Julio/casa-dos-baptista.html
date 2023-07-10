@@ -10,6 +10,167 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <style>
+      /* Título */
+      .mato-baptista {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 20px; /* Ajuste a margem */
+        position: relative;
+      }
+
+      .mato-baptista .title-divider {
+        width: 100%;
+        max-width: 150px; /* Ajuste a largura */
+        height: 2px;
+        background-color: #000;
+        margin-top: 1px; /* Ajuste a margem superior */
+        margin-bottom: 10px; /* Ajuste a margem inferior */
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      h1 {
+        font-family:'Roboto', sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 0.1px;
+      }
+
+       /* Style do Slide Show */
+       .slideshow {
+        position: relative;
+        width: 200%;
+        height: auto;
+        max-height: 495px; /* Ajuste a altura máxima */
+        margin: 0 auto; /* Centralizar o slideshow na tela */
+        overflow: hidden; /* Ocultar parte da imagem que ultrapassa o quadro branco */
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); /* Adicionar sombra ao quadro branco */
+      }
+
+      .slideshow img {
+        width: 100%;
+        height: auto;
+      }
+
+      .slick-prev,
+      .slick-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        font-size: 30px;
+        border: none;
+        outline: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      .slick-prev {
+        left: 20px;
+      }
+
+      .slick-next {
+        right: 20px;
+      }
+
+      .slick-dots {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+      }
+
+      .slick-dots li {
+        margin: 0 5px;
+      }
+
+      .slick-dots li button {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #fff;
+        opacity: 0.5;
+        border: none;
+        outline: none;
+        padding: 0;
+        cursor: pointer;
+      }
+
+      .slick-dots li.slick-active button {
+        opacity: 1;
+      }
+
+      .slideshow-thumbnails {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      .slideshow-thumbnails li {
+        list-style: none;
+        margin: 0 5px;
+      }
+
+      .slideshow-thumbnails li button {
+        width: 50px;
+        height: 50px;
+        border: none;
+        outline: none;
+        padding: 0;
+        background-color: transparent;
+      }
+
+      .slideshow-thumbnails li button img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .slideshow-description {
+        text-align: justify;
+        margin-top: 20px;
+        font-family: 'Palanquin Dark', Sans-serif;
+        font-size: 17.5px;
+        line-height: 1.5;
+      }
+
+      .slideshow-description p {
+        text-indent: 20px;
+      }
+
+      @media (max-width: 576px) {
+        .mato-baptista {
+          margin-bottom: 10px;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+
+        .slideshow {
+          max-height: 450px;
+        }
+      }
+    </style>
+
   </head>
 
   <body>
@@ -67,7 +228,42 @@
         </div>
       </header>
 
-        <p> Sobre os Baptista</p>
+      <!--CASA DOS BAPTISTA-->
+      <div class="mato-baptista">
+        <div class="center-title">
+          <h1>CASA DOS BAPTISTA</h1>
+          <div class="title-divider"></div>
+        </div>
+      </div>
+      
+      <!-- Slideshow da Casa -->
+      <div class="slideshow">
+        <div><img src="img/casa-baptista/casa-baptista-frente.JPG" alt="Casa 1"></div>
+        <div><img src="img/casa-baptista/casa-baptista-ruina.JPG" alt="Casa 2"></div>
+        <div><img src="img/casa-baptista/casa-baptista-arredores.JPG" alt="Casa 3"></div>
+        <div><img src="img/casa-baptista/casa-baptista-cima.JPG" alt="Casa 4"></div>
+        <div><img src="img/casa-baptista/casa-baptista-dentro.JPG" alt="Casa 5"></div>
+        <div><img src="img/casa-baptista/casa-baptista-sala.JPG" alt="Casa 6"></div>
+      </div>
+
+      <!-- Miniaturas do Slideshow -->
+      <div class="slideshow-thumbnails"></div>
+
+      <div class="slideshow-description">
+        <p>A Casa dos Baptista, localizada na área conhecida como Mato do Júlio em Cachoeirinha, é um tesouro histórico que remonta a aproximadamente 180-200 anos atrás. Considerada uma das construções mais significativas da Arquitetura Açoriana no Estado, esse imóvel é um marco da história e da cultura da região.</p>
+        
+        <p>A casa foi construída durante o período colonial e imperial e é reconhecida como o patrimônio histórico mais significativo do município de Cachoeirinha. Ela foi tombada como patrimônio histórico devido à sua importância para a preservação da memória da cidade.</p>
+        
+        <p>Antigamente, a Casa dos Baptista fazia parte da Fazenda da Cachoeira, propriedade do Comendador João Baptista Soares da Silveira e Souza e seus herdeiros. Essa fazenda foi fundamental para o desenvolvimento do município, sendo o ponto de partida de sua origem.</p>
+        
+        <p>Ao longo dos anos, a região ao redor da casa passou por transformações significativas. A ocupação urbana de Cachoeirinha teve início a partir da divisão das terras da fazenda entre os descendentes dos Baptista, resultando no loteamento da maior parte das terras. Esse fato impulsionou o crescimento da cidade e deu origem à Vila Cachoeirinha em 1941.</p>
+        
+        <p>A preservação da Casa dos Baptista e do Mato do Júlio, onde está localizada, é de suma importância para a valorização do passado e da cultura não apenas de Cachoeirinha, mas de todo o Rio Grande do Sul. Essa área representa uma parte essencial da história da colonização do Estado pela imigração açoriana.</p>
+        
+        <p>Para aqueles interessados em conhecer mais sobre a Casa dos Baptista e a história de Cachoeirinha, é recomendada a leitura do livro "Fragmentos – Da colonização à emancipação de Cachoeirinha" de Guilherme Dias da Silva e Marcos Leandro Greff Monteiro, que oferece informações detalhadas sobre o assunto. O livro está disponível em formato PDF, proporcionando a oportunidade de aprofundamento nessa rica história local.</p>
+        
+      </div>
+
 
       <!--CONTATO-->
       <section class="contact">
@@ -124,3 +320,31 @@
       </div>
       
     </section> <!--CONTAINER-->
+    
+    <button onclick="topFunction()" class="back-top">&#8593;</button>
+
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.slideshow').slick({
+          arrows: true, // Exibe as setas de navegação
+          dots: true, // Exibe as miniaturas
+          appendDots: '.slideshow-thumbnails', // Elemento para exibir as miniaturas
+          prevArrow: '<button type="button" class="slick-prev"><</button>', // Código HTML para a seta de navegação anterior
+          nextArrow: '<button type="button" class="slick-next">></button>', // Código HTML para a seta de navegação seguinte
+        });
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  </body>
+</html>
