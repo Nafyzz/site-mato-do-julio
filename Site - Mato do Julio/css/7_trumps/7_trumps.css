@@ -66,6 +66,18 @@
         border-radius: 15px;
     }
 
+    /* HISTORIA */
+    .dot {
+        top: calc(143% - 5px);
+        left: calc(1% + 20%);
+    }
+
+    .tooltip {
+        top: 150%;
+        left: 10%;
+        right: 10%;
+    }
+
     /* PRODUTOS */
 
     .slider-produtos {
@@ -226,6 +238,12 @@
         margin: 3vh 4vh 3vh 3vh;
     }
 
+
+    /* HISTORIA */
+    .dot {
+        top: calc(143% - 5px);
+        left: calc(3% + 20%);
+    }
 
     /* PRODUTOS */
 
@@ -499,6 +517,19 @@
         width: 40%;
     }
 
+    /* HISTORIA */
+    .dot {
+        top: calc(201% - 5px);
+        left: calc(3% + 20%);
+    }
+
+    .tooltip {
+        top: 210%;
+        left: 10%;
+        right: 10%;
+    }
+
+    /* TABBER */
     .tablink {
         width: 18.22vw;
     }
@@ -1071,6 +1102,18 @@
         margin-top: -3vh;
     }
 
+    /* HISTORIA */
+    .dot {
+        top: calc(210% - 5px);
+        left: calc(1% + 20%);
+    }
+
+    .tooltip {
+        top: 220%;
+        left: 10%;
+        right: 10%;
+    }
+
      /* TABBER */
      .tablink {
         width: 21.5vw;
@@ -1190,6 +1233,18 @@
 
     .footer {
         margin-top: -3vh;
+    }
+
+    /* HISTORIA */
+    .dot {
+        top: calc(218% - 5px);
+        left: calc(1% + 20%);
+    }
+
+    .tooltip {
+        top: 225%;
+        left: 10%;
+        right: 10%;
     }
 
      /* TABBER */
